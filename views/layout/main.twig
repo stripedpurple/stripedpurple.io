@@ -1,0 +1,32 @@
+{% extends './base.twig' %}
+{% block main %}
+    <div class="container-full navbar">
+        <span class="nav-menu">menu</span>
+        <div class="nav-brand"></div>
+        <ul class="nav-items">
+            <li class="nav-item"><a href="/about">about</a></li>
+            <li class="nav-item"><a href="/portfolio">portfolio</a></li>
+            <li class="nav-item"><a href="/codez">codez</a></li>
+            <li class="nav-item"><a href="/instagram"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item"><a href="/twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="nav-item"><a href="/messenger"><i class="fab fa-facebook-messenger"></i></a></li>
+            <li class="nav-item"><a href="/github"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+    <section class="footer">
+        <div class="left"></div>
+        <div class="right">
+            <ul class="list-inline list-unstyled">
+                <li><a href="/instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="/twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="/messenger"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li><a href="/github"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}
