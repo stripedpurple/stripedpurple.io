@@ -1,32 +1,53 @@
 {% extends './base.twig' %}
 {% block main %}
-    <div class="container-full navbar">
-        <span class="nav-menu">menu</span>
-        <div class="nav-brand"></div>
-        <ul class="nav-items">
-            <li class="nav-item"><a href="/about">about</a></li>
-            <li class="nav-item"><a href="/portfolio">portfolio</a></li>
-            <li class="nav-item"><a href="/codez">codez</a></li>
-            <li class="nav-item"><a href="/instagram"><i class="fab fa-instagram"></i></a></li>
-            <li class="nav-item"><a href="/twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="nav-item"><a href="/messenger"><i class="fab fa-facebook-messenger"></i></a></li>
-            <li class="nav-item"><a href="/github"><i class="fab fa-github"></i></a></li>
-        </ul>
-    </div>
+
+    <section>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="/images/logo.png" alt="Logo" class="is-circular is-64x64">
+                            <span class="has-margin-left">Striped Purple</span>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                                <a class="navbar-item" href="/about">about</a>
+                                <a class="navbar-item" href="/portfolio">portfolio</a>
+                                <a class="navbar-item" href="/codez">codez</a>
+                                <a class="navbar-item" href="/instagram"><i class="fab fa-instagram"></i></a>
+                                <a class="navbar-item" href="/twitter"><i class="fab fa-twitter"></i></a>
+                                <a class="navbar-item" href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="navbar-item" href="/github"><i class="fab fa-github"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </section>
 
     {% block content %}
     {% endblock %}
 
 
     <section class="footer">
-        <div class="left"></div>
-        <div class="right">
-            <ul class="list-inline list-unstyled">
-                <li><a href="/instagram"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="/twitter"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="/messenger"><i class="fab fa-facebook-messenger"></i></a></li>
-                <li><a href="/github"><i class="fab fa-github"></i></a></li>
-            </ul>
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column has-text-right">
+                        <a href="/instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="/twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
+                        <a href="/github"><i class="fab fa-github"></i></a>
+                    <span></span>
+                    &copy; Austin Barrett 2018
+                </div>
+            </div>
         </div>
     </section>
 {% endblock %}
