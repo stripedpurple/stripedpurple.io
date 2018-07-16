@@ -1,10 +1,54 @@
 {% extends './layout/main.twig' %}
 
 {% block content %}
+    <section class="hero is-primary is-fullheight bg-train">
+        <div class="hero-head">
+            {% include './partials/navbar.twig' %}
+        </div>
 
-    <section class="container">
-      <h1>Who am I?</h1>
-      <p>Welcome to {{title}}</p>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-uppercase has-text-weight-bold">
+                    Austin Barrett
+                </h1>
+                <h2 class="subtitle">
+                    Developer, Designer, Photographer &amp; Camping Enthusiast️🔥⛺
+                </h2>
+            </div>
+        </div>
+
+        <div class="hero-foot has-text-centered	">
+            <a href="#main-content"><i class="fa fa-angle-double-down fa-2x bounce"></i></a>
+        </div>
     </section>
 
+    <section class="section" id="main-content">
+        <div class="container has-text-justified">
+            <div class="columns">
+                <div class="column">
+                    <fugure  class="image is-4by5">
+                        <img src="http://via.placeholder.com/480x600/432583/ffffff" alt="profile photo">
+                    </fugure>
+                </div>
+                <div class="column">
+                    <h1 class="title">OH! Hi there!</h1>
+                    <p>Welcome to {{ title }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block css %}
+    {{ parent() }}
+    <style>
+        .hero.bg-train {
+            background: url("/images/home/train2.jpg") left center no-repeat;
+            background-size: cover;
+        }
+    </style>
+{% endblock %}
+
+{% block nav %}
 {% endblock %}

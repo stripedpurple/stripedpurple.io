@@ -1,35 +1,10 @@
 {% extends './base.twig' %}
 {% block main %}
 
-    <section>
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="/">
-                            <img src="/images/logo.png" alt="Logo" class="is-circular is-64x64">
-                            <span class="has-margin-left">Striped Purple</span>
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div class="navbar-menu">
-                        <div class="navbar-end">
-                                <a class="navbar-item" href="/about">about</a>
-                                <a class="navbar-item" href="/portfolio">portfolio</a>
-                                <a class="navbar-item" href="/codez">codez</a>
-                                <a class="navbar-item" href="/instagram"><i class="fab fa-instagram"></i></a>
-                                <a class="navbar-item" href="/twitter"><i class="fab fa-twitter"></i></a>
-                                <a class="navbar-item" href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
-                                <a class="navbar-item" href="/github"><i class="fab fa-github"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-    </section>
+
+    {% block nav %}
+         {% include '../partials/navbar.twig' %}
+    {% endblock %}
 
     {% block content %}
     {% endblock %}
@@ -38,14 +13,43 @@
     <section class="footer">
         <div class="container">
             <div class="columns">
-                <div class="column"></div>
-                <div class="column has-text-right">
-                        <a href="/instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="/twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
-                        <a href="/github"><i class="fab fa-github"></i></a>
-                    <span></span>
+                <div class="column">
+                    <form action="#">
+                        <div class="field">
+                            <label class="label" for="name">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" name="name" id="name" placeholder="Your Name">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="message">Message</label>
+                            <div class="control">
+                                <textarea name="message" id="message" cols="30" rows="10" class="textarea" placeholder="Say something..."></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="button is-primary" type="submit" value="Say hello!">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-banner has-background-white-ter">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column">
                     &copy; Austin Barrett 2018
+                </div>
+                <div class="column has-text-right">
+                    <a class="has-text-primary" href="/instagram"><i class="fab fa-instagram fa-fw"></i></a>
+                    <a class="has-text-primary" href="/twitter"><i class="fab fa-twitter fa-fw"></i></a>
+                    <a class="has-text-primary" href="/messenger"><i class="fab fa-facebook-messenger fa-fw"></i></a>
+                    <a class="has-text-primary" href="/github"><i class="fab fa-github fa-fw"></i></a>
                 </div>
             </div>
         </div>
