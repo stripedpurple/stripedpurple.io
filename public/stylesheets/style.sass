@@ -7,6 +7,14 @@ body
 a
   transition: all ease-in-out 0.3s
 
+
+span
+  &.stroke
+    border-top: 2px solid $primary
+    width: 50px
+    display: flex
+    margin: 25px auto
+
 .is-circular
   border-radius: 50%
 
@@ -20,11 +28,18 @@ a
   padding: 1rem
   border-bottom: .5rem solid $purple
 
+.has-padding-left
+  @media  screen and (min-width: 768px)
+    padding-left: 1em
+
+
 .bg-purple
   background: $purple
 
 a.padded
   padding: 1em
+
+
 
 // Bounce
 .bounce

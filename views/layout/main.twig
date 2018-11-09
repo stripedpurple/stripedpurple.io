@@ -1,9 +1,16 @@
 {% extends './base.twig' %}
 {% block main %}
-
+    <!--[if !IE]>
+    <div class="notification is-warning">
+        <button class="delete"></button>
+        Hi! Thanks for you interest in Striped Purple. I am sorry to say that your browser will not work with this site.
+        If you wish to get the most out of this site please use something like
+        <a href="://google.com/chrome">Google Chrome</a>
+    </div>
+    <![endif]-->
 
     {% block nav %}
-         {% include '../partials/navbar.twig' %}
+        {% include '../partials/navbar.twig' %}
     {% endblock %}
 
     {% block content %}
@@ -12,28 +19,69 @@
 
     <section class="footer">
         <div class="container">
+            <h2 class="is-size-2 has-text-weight-bold">Get in touch</h2>
             <div class="columns">
                 <div class="column">
-                    <form action="#">
+                    <div class="msg"></div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <form action="#" id="contact-form">
                         <div class="field">
-                            <label class="label" for="name">Name</label>
+                            <!--[if IE 6]><label class="label" for="name">Name</label><![endif]-->
                             <div class="control">
                                 <input class="input" type="text" name="name" id="name" placeholder="Your Name">
                             </div>
                         </div>
 
                         <div class="field">
-                            <label class="label" for="message">Message</label>
+                            <!--[if IE 6]><label class="label" for="email">Name</label><![endif]-->
                             <div class="control">
-                                <textarea name="message" id="message" cols="30" rows="10" class="textarea" placeholder="Say something..."></textarea>
+                                <input class="input" type="email" name="email" id="email" placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <!--[if IE 6]><label class="label" for="message">Message</label><![endif]-->
+                            <div class="control">
+                                <textarea name="message" id="message" cols="30" rows="10" class="textarea"
+                                          placeholder="Say something..."></textarea>
                             </div>
                         </div>
                         <div class="field">
                             <div class="control">
-                                <input class="button is-primary" type="submit" value="Say hello!">
+                                <input class="button is-primary" id="contact-submit" type="submit" value="Say hello!">
                             </div>
                         </div>
                     </form>
+                </div>
+
+                <div class="column is-one-third has-text-centered">
+                    <a href="https://goo.gl/maps/2LqQ4oFD7TH2" class="has-text-grey-dark">
+                        <i class="fas fa-map-marker"></i> 301 Chestnut St. Harrisburg PA
+                    </a><br>
+                    <a href="tel:717.686.5208" class="has-text-grey-dark">
+                        <i class="fa fa-phone"></i> 717.686.5208
+                    </a><br>
+                    <a href="mailto:austin@stripedpurple.io" class="has-text-grey-dark">
+                        <i class="fa fa-envelope"></i> austin@stripedpurple.io
+                    </a><br>
+                    <span class="stroke"></span>
+                    <div>
+                        <a class="has-text-grey-dark" href="/instagram">
+                            <i class="fab fa-instagram fa-fw"></i>
+                        </a>
+                        <a class="has-text-grey-dark" href="/twitter">
+                            <i class="fab fa-twitter fa-fw"></i>
+                        </a>
+                        <a class="has-text-grey-dark" href="/messenger">
+                            <i class="fab fa-facebook-messenger fa-fw"></i>
+                        </a>
+                        <a class="has-text-grey-dark" href="/github">
+                            <i class="fab fa-github fa-fw"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

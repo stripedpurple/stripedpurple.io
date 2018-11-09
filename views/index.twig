@@ -22,17 +22,25 @@
         </div>
     </section>
 
-    <section class="section" id="main-content">
-        <div class="container has-text-justified">
+    <section class="section bg-purple" id="main-content">
+        <div class="container">
             <div class="columns">
-                <div class="column">
-                    <fugure  class="image is-4by5">
-                        <img src="http://via.placeholder.com/480x600/5053BE/ffffff" alt="profile photo">
+                <div class="column is-one-third">
+                    <fugure class="image is-1by1">
+                        <img src="/images/home/profile.jpg" alt="profile photo"
+                             srcset="/images/home/profile-320w.jpg 320w,
+                                     /images/home/profile-480w.jpg 480w,
+                                     /images/home/profile-800w.jpg 800w" class="is-circular">
                     </fugure>
                 </div>
                 <div class="column">
-                    <h1 class="title">OH! Hi there!</h1>
-                    <p>Welcome to {{ title }}</p>
+                    <div class="has-padding-left">
+                        <h1 class="title has-text-white">About Austin</h1>
+                        <hr style="border: none; border-bottom: 4px solid white; width: 3em; margin: -1rem 0 1rem 0">
+                        <p class="is-size-4-desktop is-size-5-touch has-text-light">Austin has been responsible for bringing to life countless project. Everything from beautiful websites to complex web apps used in day to day operations.</p>
+                        <br>
+                        <p class="is-size-4-desktop is-size-5-touch has-text-light">Working closely with a sundry of companies, Austin has been able to provided unparalleled web design/development, and product/event photography.</p>
+                    </div>
                 </div>
             </div>
         </div>
