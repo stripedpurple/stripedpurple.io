@@ -12,13 +12,15 @@ $(document).ready(function () {
 
     $('#contact-submit').click(function () {
 
-        $.post('/contact', $('#contact-form').serialize(), function () {
-            console.log('success');
+        var posting = $.post('/contact', $('#contact-form').serialize());
+
+        posting.done(function (data) {
+            console.log('success', data);
             $('.footer .msg').html('<div class="notification is-success"><button class="delete"></button>Thank you for contacting Gold Medal Environmental. Someone will contact you shortly!</div>');
         }).fail(function (err) {
-                console.log(err);
-                $('.footer .msg').html('<div class="notification is-danger"><button class="delete"></button>' + err.responseText + '</div>');
-            });
+            console.log(err);
+            $('.footer .msg').html('<div class="notification is-danger"><button class="delete"></button>' + err.responseText + '</div>');
+        });
 
         return false;
     });
