@@ -14,8 +14,8 @@ router.get('/', (req, res, next) => {
     res.render('index', {home: true});
 });
 
-router.get('/portfolio', (req, res, next) => {
-    res.render('portfolio', {title: 'Portfolio'});
+router.get('/terms/photography', (req, res, next) => {
+    res.send('Coming soon!');
 });
 
 

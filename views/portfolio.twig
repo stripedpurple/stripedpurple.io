@@ -1,71 +1,42 @@
-{% extends './layout/main.twig' %}
+{% extends "layout/main.twig" %}
 
 {% block content %}
-    {% include './partials/navbar.twig' %}
-    <div id="gallery">
-        <section class="section">
-            <div class="container">
-                <div class="columns is-multiline">
-                    <div class="column is-one-quarter" v-for="img in images">
-                        <figure class="is-square">
-                            <img :src="img.thumbnail" :alt="img.alt" @click.prevent="lightBox(img.fullSize, img.alt)">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="lightbox" v-if="showLightBox" @click.prevent="lightBox">
-            <a href="#" class="is-fullwidth has-text-right has-text-danger padded">
-                <i class="fa fa-times fa-2x padded"></i>
-            </a>
-            <div class="lightbox-container" :style="{backgroundImage: 'url(' + lightBoxInfo.image + ')'}">
-
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title is-size-4">Headshots at Whitaker Center</h1>
+                <figure class="image is-1x1">
+                    <a href="/gallery/event/20190209"><img src="/images/gallery/whitaker1.jpg" alt="Headshot at Whitaker Center"></a>
+                </figure>
             </div>
-        </section>
+
+            <div class="column">
+                <h1 class="title is-size-4">Student 5K</h1>
+                <figure class="image is-1x1">
+                    <a href="/gallery/event/20180418"><img src="/images/gallery/5k.jpg" alt="Student 5K"></a>
+                </figure>
+            </div>
+            <div class="column">
+                <h1 class="title is-size-4">Personal Work</h1>
+                <figure class="image is-1x1">
+                    <a href="/gallery/event/20180418"><img src="/images/gallery/5k.jpg" alt="Student 5K"></a>
+                </figure>
+            </div>
+        </div>
     </div>
+</section>
 
 {% endblock %}
 
-
 {% block css %}
-    {{ parent() }}
-    <style>
-        .is-fullwidth{
-            width: 100%;
-        }
-        .lightbox {
-            position: fixed;
-            display: flex;
-            /*align-items: center;*/
-            justify-content: center;
-            height: 100vh;
-            width: 100%;
-            top: 0;
-            background: rgba(0, 0, 0, 0.75);
-            z-index: 10000;
-            flex-wrap: wrap;
-        }
-
-        .lightbox-container {
-            max-width: 90%;
-            max-height: 80%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            width: 100%;
-        }
-    </style>
+{{ super() }}
 {% endblock %}
 
 {% block js %}
-    {{ parent() }}
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-    <script src="/javascripts/gallery.vue.js"></script>
+{{ super() }}
 {% endblock %}
 
-{% block nav %}
-{% endblock %}
+
+
