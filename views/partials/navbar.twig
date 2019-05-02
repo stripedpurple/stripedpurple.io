@@ -15,15 +15,34 @@
             <div class="navbar-menu">
                 <div class="navbar-end">
                     <a class="navbar-item page-scroll" href="{% if not home %}/{% endif %}#main-content">about</a>
-                    <a class="navbar-item" href="/portfolio">portfolio</a>
-                    <a class="navbar-item" href="/blog" target="_blank">blog</a>
-                    <a class="navbar-item" href="/codez" target="_blank">codez</a>
-                    <a class="navbar-item navbar-inline" href="/instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="navbar-item navbar-inline" href="/twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="navbar-item navbar-inline" href="/messenger" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                    <a class="navbar-item navbar-inline" href="/github" target="_blank"><i class="fab fa-github"></i></a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-lowercase">
+                            shop
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="/shop/prints" target="_blank">
+                                prints
+                            </a>
+                            <a class="navbar-item" href="/shop/designs" target="_blank">
+                                sticker / designs
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <a class="navbar-item" href="/portfolio">portfolio</a>
+                <a class="navbar-item" href="/blog" target="_blank">blog</a>
+                <a class="navbar-item" href="/codez" target="_blank">codez</a>
+
+                <a class="navbar-item navbar-inline" href="/instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="navbar-item navbar-inline" href="/twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="navbar-item navbar-inline" href="/messenger" target="_blank"><i
+                            class="fab fa-facebook-messenger"></i></a>
+                <a class="navbar-item navbar-inline" href="/github" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+        </div>
         </div>
     </nav>
 </section>

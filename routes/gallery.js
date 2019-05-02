@@ -19,6 +19,8 @@ router.get('/portfolio/event/:id', function (req, res, next) {
         var db = client.db(dbName);
         var collection = db.collection('event');
         collection.find(queryStr).toArray(function (err, data) {
+            console.log("ERROR:\t", err);
+            console.log("DATA:\t", data);
             if (err || data.length < 1){
                 res.status(404);
                 res.render('error');

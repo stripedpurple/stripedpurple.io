@@ -11,11 +11,11 @@ let contactFile = config.get('/opt/dev/config/stripedpurple', 'contactFile');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-    res.render('index', {home: true});
+    res.render('index', {home: true})
 });
 
 router.get('/terms/photography', (req, res, next) => {
-    res.send('Coming soon!');
+    res.send('Coming soon!')
 });
 
 
@@ -86,10 +86,10 @@ router.post('/contact', (req, res, next) => {
         }else{
             console.log(info);
         }
-    });
+    })
 
 
-});
+})
 
 
 // Redirects
@@ -112,6 +112,16 @@ router.get('/instagram', (req, res, next) => {
 router.get('/twitter', (req, res, next) => {
     res.redirect('https://twitter.com/_stripedpurple')
 });
+
+router.get('/shop/prints', (req, res, next) => {
+    res.redirect('https://stripedpurple.darkroom.tech')
+});
+
+router.get('/shop/designs', (req, res, next) => {
+    res.redirect('https://www.redbubble.com/people/VCOBA/shop')
+});
+
+
 
 
 module.exports = router;
