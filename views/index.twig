@@ -6,14 +6,16 @@
             {% include './partials/navbar.twig' %}
         </div>
 
-        <div class="hero-body">
+        <div class="hero-body has-text-centered">
             <div class="container">
                 <h1 class="title is-uppercase has-text-weight-bold">
                     Austin Barrett
                 </h1>
-                <h2 class="subtitle">
-                    Developer, Designer, Photographer &amp; Camping Enthusiast️🔥⛺
-                </h2>
+                <span class="subtitle" id="typewriter" data-typewriter="Developer, Designer, Photographer &amp; Camping Enthusiast️🔥⛺"></span><span class="blinking-cursor">|</span>
+                <noscript>
+                    <h2>Developer,Designer,Photographer,&amp; Camping Enthusiast️🔥⛺</h2>
+                </noscript>
+
             </div>
         </div>
 
@@ -56,6 +58,8 @@
 
 {% block css %}
     {{ parent() }}
+
+    <link rel="stylesheet" href="/stylesheets/typewriter.css">
     <style>
         .hero.bg-train {
             background: url("/images/home/train2.jpg") left center no-repeat;
@@ -63,6 +67,11 @@
             background-attachment: fixed;
         }
     </style>
+{% endblock %}
+
+{% block js %}
+{{ parent() }}
+    <script src="/javascripts/typewriter.js"></script>
 {% endblock %}
 
 {% block nav %}
