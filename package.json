@@ -1,20 +1,27 @@
 {
   "name": "stripedpurple.io",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "personal website",
+  "author": "Austin Barrett",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "bulma": "^0.7.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "http-errors": "~1.6.2",
-    "mongodb": "^3.1.13",
-    "morgan": "^1.9.1",
-    "node-sass-middleware": "0.11.0",
-    "nodemailer": "^4.6.8",
-    "twig": "~0.10.3"
+    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/font-awesome": "^1.0.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0"
   }
 }
