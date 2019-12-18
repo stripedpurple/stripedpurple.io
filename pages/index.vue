@@ -2,10 +2,10 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
+      <h1 class="title is-size-3">
         Austin Barrett
       </h1>
-      <h2 class="subtitle">
+      <h2 class="subtitle is-size-4">
         Photographer, Developer, &amp; Camping Enthusiast ⛺️🔥
       </h2>
       <div class="links">
@@ -15,10 +15,10 @@
         <a href="/portfolio" class="button is-primary is-medium">Shop</a>
       </div>
       <div class="links">
-        <a href="https://github.com/viruscmd" target="_blank"
-          class="button"><i class="fa fa-github fa-fw fa-lg"></i>&nbsp;&nbsp;GitHub</a>
         <a href="https://www.instagram.com/stripedpurple/" target="_blank"
            class="button"><i class="fa fa-fw fa-lg fa-instagram"></i>&nbsp;&nbsp;Instagram</a>
+        <a href="https://github.com/viruscmd" target="_blank"
+          class="button"><i class="fa fa-github fa-fw fa-lg"></i>&nbsp;&nbsp;GitHub</a>
         <a href="/contact" class="button"><i class="fa fa-fw fa-lg fa-paper-plane"></i>&nbsp;&nbsp;Contact</a>
       </div>
     </div>
