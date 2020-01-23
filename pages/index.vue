@@ -25,8 +25,8 @@
 
               <div class="dropdown-menu" id="PortfolioDropdown" role="menu">
                 <div class="dropdown-content has-text-left">
-                    <a class="dropdown-item" href="" target="_blank">Photography</a>
-                    <a class="dropdown-item" href="" target="_blank">Web Design/Development</a>
+                    <a class="dropdown-item" href="/portfolio/photography">Photography</a>
+                    <a class="dropdown-item" href="/portfolio/web">Web Design/Development</a>
                 </div>
               </div>
             </div>
