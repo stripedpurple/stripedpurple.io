@@ -31,7 +31,7 @@
 
 <script>
   export default {
-    name: "navbar",
+    name: "NavBar",
     data() { return { show: false } }
   }
 </script>

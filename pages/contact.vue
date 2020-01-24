@@ -54,7 +54,7 @@
 </template>
 
 <script>
-  import Navbar from '~/components/navbar.vue'
+  import Navbar from '~/components/NavBar.vue'
   import RFooter from '~/components/reusable-footer.vue'
 
   export default {
