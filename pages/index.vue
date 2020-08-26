@@ -2,11 +2,11 @@
   <div class="section is-fullheight is-flex">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column">
+        <div class="column has-text-centered">
           <logo class="wow fadeInUpBig"/>
           <br>
-          <h1 class="title is-size-3 wow fadeInUpBig">Austin Barrett</h1>
-          <h2 class="subtitle is-size-4 wow fadeInUpBig">Photographer, Developer, &amp; Magician Extraordinaire
+          <h1 class="title  wow fadeInUpBig">Austin Barrett</h1>
+          <h2 class="subtitle  wow fadeInUpBig">Photographer, Developer, &amp; Magician Extraordinaire
             ♣️♥️♠️♦️</h2>
           <div class="buttons is-centered">
             <!--   About      -->
@@ -84,28 +84,14 @@
 </script>
 
 <style scoped lang="sass">
-  .container
-    margin: 0 auto
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
+  .is-flex
+    place-items: center
+  .title
+    color: #35495e
 
+  .subtitle
+    color: #526488
 
-    .title
-      display: block
-      font-weight: 300
-      font-size: 100px
-      color: #35495e
-      letter-spacing: 1px
-
-
-    .subtitle
-      font-weight: 300
-      font-size: 42px
-      color: #526488
-      word-spacing: 5px
-      padding-bottom: 15px
   .icon::v-deep
     margin: 0 0.5rem
 </style>
