@@ -55,6 +55,7 @@
         <reusable-footer/>
       </div>
     </section>
+    <meta-tags title="Drop me a line" description="you can find me on all of the following"/>
   </div>
 </template>
 

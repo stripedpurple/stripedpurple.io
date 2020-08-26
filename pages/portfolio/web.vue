@@ -19,6 +19,8 @@
     </section>
 
     <reusable-footer/>
+
+    <meta-tags title="Web Design & Development" description="The web is beautiful and we can add to it together"/>
   </div>
 </template>
 

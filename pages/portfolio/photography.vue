@@ -29,6 +29,8 @@
         <img :src="isOpenImg" >
       </figure>
     </b-modal>
+
+    <meta-tags title="Photography Gallery" description="A visual journey through the lens of Austin Barrett"/>
   </div>
 </template>
 
