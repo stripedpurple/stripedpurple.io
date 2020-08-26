@@ -1,78 +1,91 @@
 <template>
-  <section>
-    <NavBar/>
-    <div class="container">
-      <div class="columns" v-show="images.length < 1">
-        <div class="column">
-          <p class="has-text-centered">Loading...</p>
-          <progress class="progress is-large is-primary" max="100">60%</progress>
-        </div>
-      </div>
-      <div class="columns is-multiline">
-        <div class="column is-full">
-          <p class="title">Total: {{ images.length }}</p>
-          <p class="subtitle">Combined Total: {{ imagesFirst.length + imagesSecond.length + imagesThird.length }}</p>
-        </div>
-        <div class="column">
-          <figure class="image" v-for="(img, index) in imagesFirst">
-            <img :src="img.thumb" :alt="index">
-          </figure>
-        </div>
+  <div>
+    <Navi/>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered is-multiline is-mobile">
+          <div class="column is-one-third" v-for="(img, index) in photos.slice(0,photoCount)">
+            <figure class="image is-1by1" :style="`background-image: url(/${img.path}-thumb.jpg)`">
+              <div class="magnify" @click.prevent="showModal(`/${img.path}.jpg`)">
+                <div class="has-text-centered">
+                  <b-icon icon="search-plus" size="is-large" custom-class="fa-3x"/>
+                  <p class="has-text-light has-text-weight-bold" v-if="img.location">
+                    {{img.location}}
+                  </p>
+                </div>
+              </div>
+            </figure>
+          </div>
 
-        <div class="column">
-          <figure class="image" v-for="(img, index) in imagesSecond">
-            <img :src="img.thumb" :alt="index">
-          </figure>
         </div>
-
-        <div class="column">
-          <figure class="image" v-for="(img, index) in imagesThird">
-            <img :src="img.thumb" :alt="index">
-          </figure>
-        </div>
+          <div id="observer"></div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <reusable-footer/>
+
+    <b-modal :active.sync="isOpen">
+      <figure class="image">
+        <img :src="isOpenImg" >
+      </figure>
+    </b-modal>
+  </div>
 </template>
 
 <script>
-  import NavBar from '~/components/NavBar.vue';
+  import data from '../../assets/media.json'
 
   export default {
-    name: "portfolio",
-    data(){
+    name: "photography-portfolio",
+    data() {
       return {
-        images: []
-      }
-    },
-    components: {
-      NavBar
-    },
-    computed: {
-      imagesFirst(){
-        return this.images.filter((_,i) => (i + 3) % 3 === 1)
-      },
-      imagesSecond(){
-        return this.images.filter((_,i) => (i + 3) % 3 === 2)
-      },
-      imagesThird(){
-        return this.images.filter((_,i) => (i + 3) % 3 === 0)
+        isOpen: false,
+        isOpenImg: '',
+        photos: data.photos,
+        photoCount: 30
       }
     },
     methods: {
-      async getPhotos (id) {
-        const res = await this.$axios.$get(`/api/photos/${id}`);
-        this.images = res
+      showModal(img) {
+        this.isOpen = true;
+        this.isOpenImg = img;
       }
     },
     mounted() {
-      this.getPhotos('forster2019')
+      let observer = document.getElementById('observer');
+      let innerHeight = window.innerHeight + 500;
+
+      document.addEventListener("scroll", () => {
+        if (observer.getBoundingClientRect().top < innerHeight) {
+          this.photoCount += 9
+        }
+
+      });
     }
   }
 </script>
 
 <style lang="sass" scoped>
-  figure.image
-    padding: 0 0 1.5rem 0
+  .image
+    background: #fefefe
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
 
+    .magnify
+      position: absolute
+      padding: 1rem
+      top: 0
+      z-index: 1
+      display: grid
+      place-items: center
+      height: 100%
+      width: 100%
+      opacity: 0
+      background: rgba(0, 0, 0, 0.25)
+      color: whitesmoke
+      transition: all ease-in-out 0.3s
+
+      &:hover
+        opacity: 1
 </style>

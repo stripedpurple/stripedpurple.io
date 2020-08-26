@@ -1,81 +1,69 @@
 <template>
-  <div class="container hero is-fullheight" @keyup.esc='goHome'>
-    <div class="hero-head has-text-right" @keyup.esc='goHome'>
-      <Navbar class=" wow fadeInLeftBig"></Navbar>
-    </div>
-    <div class="hero-body">
-      <div class="columns is-multiline is-centered is-full">
-        <div class="column is-full has-text-centered">
-          <div class="field has-addons wow fadeInUpBig">
-            <p class="control">
-              <a href="https://www.instagram.com/stripedpurple/" class="button"><i
-                class="fa fa-instagram"></i></a>
-            </p>
-            <p class="control">
-              <a href="https://www.instagram.com/stripedpurple/" class="button">stripedpurple</a>
-            </p>
-          </div>
-        </div>
+  <div>
+    <section class="hero is-fullheight" @keyup.esc='goHome'>
+      <Navi :fixed="false"/>
+      <div class="hero-body">
+        <div style="width: 100%; display: flex; flex-direction: column; place-items: center">
+          <p class="title">Drop me a line!</p>
+          <p class="subtitle">you can find me on all of the following</p>
+          <b-button type="is-dark" tag="a" href="https://www.instagram.com/stripedpurple/" target="_blank"
+                    rel="noopener noreferrer"
+                    icon-pack="fab" icon-left="instagram" custom-class="fa-fw">stripedpurple
+          </b-button>
+          <br>
 
-        <div class="column is-full has-text-centered">
-          <div class="field has-addons wow fadeInUpBig">
-            <p class="control">
-              <a href="https://twitter.com/_stripedpurple" class="button"><i class="fa fa-twitter"></i></a>
-            </p>
-            <p class="control">
-              <a href="https://twitter.com/_stripedpurple" class="button">_stripedpurple</a>
-            </p>
-          </div>
-        </div>
-        <div class="column is-full has-text-centered">
-          <div class="field has-addons wow fadeInUpBig">
-            <p class="control">
-              <a href="http://m.me/stripedpurple" class="button"><i class="fa fa-facebook"></i></a>
-            </p>
-            <p class="control">
-              <a href="http://m.me/stripedpurple" class="button">stripedpurple</a>
-            </p>
-          </div>
-        </div>
-        <div class="column is-full has-text-centered">
-          <div class="field has-addons wow fadeInUpBig">
-            <p class="control">
-              <a href="mailto:saustin@stripedpurple.io" class="button"><i class="fa fa-envelope"></i></a>
-            </p>
-            <p class="control">
-              <a href="mailto:austin@stripedpurple.io" class="button">austin@stripedpurple.io</a>
-            </p>
-          </div>
+          <b-button type="is-dark" tag="a" href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
+                    icon-pack="fab"
+                    icon-left="github" custom-class="fa-fw">viruscmd
+          </b-button>
+          <br>
+
+          <b-button type="is-dark" tag="a" href="https://medium.com/@stripedpurple" target="_blank" rel="noopener noreferrer" icon-pack="fab"
+                    icon-left="medium"
+                    custom-class="fa-fw">stripedpurple
+          </b-button>
+          <br>
+
+          <b-button type="is-dark" tag="a" href="https://codepen.io/stripedpurple" target="_blank"
+                    rel="noopener noreferrer"
+                    icon-pack="fab" icon-left="codepen" custom-class="fa-fw">stripedpurple
+          </b-button>
+          <br>
+
+          <b-button type="is-dark" tag="a" href="https://twitter.com/_stripedpurple" target="_blank"
+                    rel="noopener noreferrer"
+                    icon-pack="fab" icon-left="twitter" custom-class="fa-fw">_stripedpurple
+          </b-button>
+          <br>
+
+          <b-button type="is-dark" tag="a" href="https://www.linkedin.com/in/stripedpurple/" target="_blank"
+                    rel="noopener noreferrer"
+                    icon-pack="fab" icon-left="linkedin" custom-class="fa-fw">stripedpurple
+          </b-button>
+          <br>
+
+          <b-button type="is-dark" tag="a" href="mailto:austin@stripedpurple.io?subject=Website Contact"
+                    target="_blank" rel="noopener noreferrer" icon-pack="fas" icon-left="paper-plane"
+                    custom-class="fa-fw">austin@stripedpurple.io
+          </b-button>
+          <br>
+
         </div>
       </div>
-    </div>
-    <div class="hero-footer"><RFooter></RFooter></div>
+
+      <div class="hero-footer">
+        <reusable-footer/>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-  import Navbar from '~/components/NavBar.vue'
-  import RFooter from '~/components/reusable-footer.vue'
-
   export default {
     name: "contact",
-    components: {
-      Navbar,
-      RFooter
-    }
   }
 </script>
 
 <style lang="sass" scoped>
-  .field.has-addons
-    display: inline-flex
 
-    .has-padding-top
-      padding-top: 0.75rem
-
-    .has-padding-right
-      padding-right: 1.5rem
-
-  .columns.is-full
-    width: 100%
 </style>

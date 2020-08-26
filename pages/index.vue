@@ -1,62 +1,68 @@
 <template>
   <div class="section is-fullheight is-flex">
     <div class="container">
-      <div class="columns">
+      <div class="columns is-centered">
         <div class="column">
           <logo class="wow fadeInUpBig"/>
-          <h1 class="title is-size-3 wow fadeInUpBig">
-            Austin Barrett
-          </h1>
-          <h2 class="subtitle is-size-4 wow fadeInUpBig">
-            Photographer, Developer, &amp; Magician Extraordinaire ♣️♥️♠️♦️
-          </h2>
-          <div class="links">
-<!--                 About      -->
-<!--            <a href="/about" class="button wow fadeInUpBig is-primary">About</a>-->
+          <br>
+          <h1 class="title is-size-3 wow fadeInUpBig">Austin Barrett</h1>
+          <h2 class="subtitle is-size-4 wow fadeInUpBig">Photographer, Developer, &amp; Magician Extraordinaire
+            ♣️♥️♠️♦️</h2>
+          <div class="buttons is-centered">
+            <!--   About      -->
+            <!--            <nuxt-link to="/about" class="button wow fadeInUpBig is-primary">About</nuxt-link>-->
 
-            <!--     Portfolio Dropdown      -->
-            <div class="dropdown wow fadeInUpBig" :class="{'is-active': portfolioDrop}">
-              <div class="dropdown-trigger">
-                <button class="button is-medium is-primary" aria-haspopup="true" aria-controls="PortfolioDropdown" @click="portfolioDrop=!portfolioDrop">
-                  <span>Portfolio</span>
-                  <span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                </button>
-              </div>
+            <!--   Portfolio      -->
+            <nuxt-link class="button wow fadeInUpBig is-primary" to="/portfolio/photography">Photography</nuxt-link>
+            <nuxt-link class="button wow fadeInUpBig is-primary" to="/portfolio/web">Web Design/Dev</nuxt-link>
 
-              <div class="dropdown-menu" id="PortfolioDropdown" role="menu">
-                <div class="dropdown-content has-text-left">
-                    <a class="dropdown-item" href="/portfolio/photography">Photography</a>
-                    <a class="dropdown-item" href="/portfolio/web">Web Design/Development</a>
-                </div>
-              </div>
-            </div>
-
-            <!--     Blog      -->
-            <a target="_blank" href="https://medium.com/@stripedpurple" class="button is-medium wow fadeInUpBig is-primary">Blog</a>
-
-            <!--     Shop Dropdown      -->
-            <div class="dropdown wow fadeInUpBig" :class="{'is-active': shopDrop}">
-              <div class="dropdown-trigger">
-                <button class="button is-medium is-primary" aria-haspopup="true" aria-controls="ShopDropdown" @click="shopDrop=!shopDrop">
-                  <span>Shop</span>
-                  <span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                </button>
-              </div>
-
-              <div class="dropdown-menu" id="ShopDropdown" role="menu">
-                <div class="dropdown-content has-text-left">
-                    <a class="dropdown-item" href="https://stripedpurple.darkroom.tech/" target="_blank">Prints</a>
-                    <a class="dropdown-item" href="https://www.redbubble.com/people/VCOBA/shop" target="_blank">Designs</a>
-                </div>
-              </div>
-            </div>
+            <!--     Shop       -->
+            <a class="button wow fadeInUpBig is-primary" href="https://stripedpurple.darkroom.tech/" target="_blank">Prints</a>
+            <a class="button wow fadeInUpBig is-primary" href="https://www.redbubble.com/people/VCOBA/shop"
+               target="_blank">Graphic Designs</a>
           </div>
-          <div class="links">
-            <a href="https://www.instagram.com/stripedpurple/" target="_blank"
-               class="button wow fadeInUpBig"><i class="fa fa-fw fa-lg fa-instagram"></i>&nbsp;&nbsp;Instagram</a>
-            <a href="https://github.com/viruscmd" target="_blank"
-               class="button wow fadeInUpBig"><i class="fa fa-github fa-fw fa-lg"></i>&nbsp;&nbsp;GitHub</a>
-            <a href="/contact" class="button wow fadeInUpBig"><i class="fa fa-fw fa-lg fa-paper-plane"></i>&nbsp;&nbsp;Contact</a>
+          <div class=" wow fadeInUpBig">
+            <b-tooltip label="@stripedpurple" type="is-dark">
+              <a href="https://www.instagram.com/stripedpurple/" target="_blank" rel="noopener noreferrer"
+                 class="has-text-grey-dark">
+                <b-icon pack="fab" icon="instagram" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="@viruscmd" type="is-dark">
+              <a href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
+                 class="has-text-grey-dark">
+                <b-icon pack="fab" icon="github" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="@stripedpurple" type="is-dark">
+              <a href="" target="_blank" rel="noopener noreferrer" class="has-text-grey-dark">
+                <b-icon pack="fab" icon="medium" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="@stripedpurple" type="is-dark">
+              <a href="https://codepen.io/stripedpurple" target="_blank" rel="noopener noreferrer"
+                 class="has-text-grey-dark">
+                <b-icon pack="fab" icon="codepen" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="@_stripedpurple" type="is-dark">
+              <a href="https://twitter.com/_stripedpurple" target="_blank" rel="noopener noreferrer"
+                 class="has-text-grey-dark">
+                <b-icon pack="fab" icon="twitter" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="@stripedpurple" type="is-dark">
+              <a href="https://www.linkedin.com/in/stripedpurple/" target="_blank" rel="noopener noreferrer"
+                 class="has-text-grey-dark">
+                <b-icon pack="fab" icon="linkedin" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
+            <b-tooltip label="austin@stripedpurple.io" type="is-dark">
+              <a href="mailto:austin@stripedpurple.io?subject=Website Contact" target="_blank"
+                 rel="noopener noreferrer" class="has-text-grey-dark">
+                <b-icon pack="fas" icon="paper-plane" custom-class="fa-fw"></b-icon></a>
+            </b-tooltip>
+
           </div>
         </div>
       </div>
@@ -72,15 +78,12 @@
       Logo
     },
     data() {
-      return {
-        shopDrop: false,
-        portfolioDrop: false
-      }
+      return {}
     }
   }
 </script>
 
-<style lang="sass">
+<style scoped lang="sass">
   .container
     margin: 0 auto
     display: flex
@@ -103,12 +106,6 @@
       color: #526488
       word-spacing: 5px
       padding-bottom: 15px
-
-
-    .links
-      padding-top: 15px
-
-      .button
-        margin-bottom: .5rem
-
+  .icon::v-deep
+    margin: 0 0.5rem
 </style>
