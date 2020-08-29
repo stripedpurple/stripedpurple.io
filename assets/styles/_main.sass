@@ -1,5 +1,5 @@
 // Config
-$brand-color: #5054be
+$brand-color: #6465be
 $primary: $brand-color
 $link: $primary
 $link-hover: darken($primary, 10%)
@@ -20,9 +20,12 @@ body
   font-size: 16px
   padding: 0
   margin: 0
-  background: white
-  color: #666
+  //background: white
   font-family: Raleway,'Quicksand', 'Source Sans Pro', "Helvetica Neue", "Fira Sans", "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif
+
+div, p
+  @media screen and (max-width: 768px)
+    font-size: 16px
 
 // Utilities
 .is-rounded

@@ -7,9 +7,9 @@
           <div class="column is-one-third" v-for="(img, index) in photos.slice(0,photoCount)">
             <figure class="image is-1by1" :style="`background-image: url(/${img.path}-thumb.jpg)`">
               <div class="magnify" @click.prevent="showModal(`/${img.path}.jpg`)">
-                <div class="has-text-centered">
+                <div class="has-text-centered" style="margin: -1rem">
                   <b-icon icon="search-plus" size="is-large" custom-class="fa-3x"/>
-                  <p class="has-text-light has-text-weight-bold" v-if="img.location">
+                  <p class="has-text-light has-text-weight-bold is-hidden-mobile" v-if="img.location">
                     {{img.location}}
                   </p>
                 </div>
@@ -26,7 +26,7 @@
 
     <b-modal :active.sync="isOpen">
       <figure class="image">
-        <img :src="isOpenImg" >
+        <img :src="isOpenImg"/>
       </figure>
     </b-modal>
 
