@@ -17,9 +17,10 @@
             <nuxt-link class="button wow fadeInUpBig is-primary" to="/portfolio/web">Web Design/Dev</nuxt-link>
 
             <!--     Shop       -->
-            <a class="button wow fadeInUpBig is-primary" href="https://stripedpurple.darkroom.tech/" target="_blank">Prints</a>
+            <a class="button wow fadeInUpBig is-primary" href="https://stripedpurple.darkroom.tech/" target="_blank"
+               rel="noreferrer noopenner">Prints</a>
             <a class="button wow fadeInUpBig is-primary" href="https://www.redbubble.com/people/VCOBA/shop"
-               target="_blank">Graphic Designs</a>
+               target="_blank" rel="noreferrer noopenner">Graphic Designs</a>
           </div>
           <div class=" wow fadeInUpBig">
             <b-tooltip label="@stripedpurple" type="is-dark">

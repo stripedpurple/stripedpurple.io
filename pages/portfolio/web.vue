@@ -4,7 +4,7 @@
 
     <section class="section">
       <div class="container">
-        <div :class="`columns is-multiline wow fadeInUp ${key % 2 === 0 ? 'is-reversed-tablet' : ''}`" v-for="(site,key) in sites" :key="key">
+        <div :class="`columns is-multiline wow fadeInUp ${key % 2 !== 0 ? 'is-reversed-tablet' : ''}`" v-for="(site,key) in sites" :key="key">
           <div class="column is-4-desktop is-full-tablet">
             <figure class="image is-5by4"><img :src="site.img" :alt="site.name"></figure>
           </div>

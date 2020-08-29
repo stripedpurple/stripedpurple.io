@@ -1,6 +1,6 @@
 <template>
   <div class="logo-container">
-    <img src="/img/profile-800w.jpg" alt="Profile Photo"
+    <img src="/img/profile.jpg" alt="Profile Photo"
          class="is-rounded image fadeInUpBig" id="logo">
   </div>
 </template>
