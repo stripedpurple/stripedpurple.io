@@ -3,7 +3,7 @@
     <section class="hero is-fullheight" @keyup.esc='goHome'>
       <Navi :fixed="false"/>
       <div class="hero-body">
-        <div style="width: 100%; display: flex; flex-direction: column; place-items: center">
+        <div style="width: 100%; display: flex; flex-direction: column; place-items: center" class="has-text-centered">
           <p class="title">Drop me a line!</p>
           <p class="subtitle">you can find me on all of the following</p>
           <b-button size="is-medium" type="is-dark" tag="a" href="https://www.instagram.com/stripedpurple/" target="_blank"

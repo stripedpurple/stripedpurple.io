@@ -38,6 +38,8 @@ div, p
   @media screen and (max-width: 768px)
     font-size: 16px
 
+p:not(:last-child)
+  margin-bottom: 0.75rem
 // Utilities
 .is-rounded
   -webkit-border-radius: 50%
@@ -61,6 +63,10 @@ div, p
   @media(min-width: $tablet +1)
     display: flex
     flex-direction: row-reverse
+
+.buttons .button
+  @media screen and (max-width: 768px)
+    margin-right: 0 !important
 
 .button
   @media screen and (max-width: 768px)

@@ -19,9 +19,9 @@
 
             <!--     Shop       -->
             <a class="button wow fadeInUpBig is-primary" href="https://stripedpurple.darkroom.tech/" target="_blank"
-               rel="noreferrer noopenner">Prints</a>
-            <a class="button wow fadeInUpBig is-primary" href="https://www.redbubble.com/people/VCOBA/shop"
-               target="_blank" rel="noreferrer noopenner">Graphic Designs</a>
+               rel="noreferrer noopener">Shop Prints</a>
+<!--            <a class="button wow fadeInUpBig is-primary" href="https://www.redbubble.com/people/VCOBA/shop"-->
+<!--               target="_blank" rel="noreferrer noopener">Graphic Designs</a>-->
 
           </div>
           <div class=" wow fadeInUpBig">

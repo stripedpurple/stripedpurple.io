@@ -12,7 +12,7 @@
           <div class="column is-7-desktop is-full-tablet">
             <p class="title">{{site.name}}</p>
             <div class="subtitle has-text-justified-desktop" v-html="site.description"></div>
-            <a class="button is-dark" :href="site.url" target="_blank" rel="noreferrer noopenner"><strong class="is-family-sans-serif	">view live site</strong>&nbsp;&nbsp;<b-icon size="is-small" icon="arrow-right" custom-class="fa-fw"/></a>
+            <a class="button is-dark" :href="site.url" target="_blank" rel="noreferrer noopener"><strong class="is-family-sans-serif	">view live site</strong>&nbsp;&nbsp;<b-icon size="is-small" icon="arrow-right" custom-class="fa-fw"/></a>
           </div>
         </div>
       </div>

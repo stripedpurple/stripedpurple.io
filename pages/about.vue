@@ -9,9 +9,11 @@
         <div class="about-copy">
           <p class="subtitle has-text-periwinkle is-size-3">Hello my name is</p>
           <h1 class="title is-uppercase is-size-1">Austin Barrett</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium ad adipisci
-            aliquam debitis dolor, illum ipsa molestiae nemo nesciunt nisi non officiis omnis possimus quibusdam ullam
-            unde veniam.</p>
+          <p>...and I create beautiful things. I have worked with companies small and large to bring their vision to life. I am experienced in building everything from
+            <a href="https://1time.pw" target="_blank" rel="noreferrer noopener">single page application/website</a>  to production ready
+            <a href="https://demo.biohitechcloud.com" target="_blank" rel="noreferrer noopener">systems dashboards</a>.</p>
+          <p>In my free time you can find me contributing to open source communities, hitting the <nuxt-link to="/portfolio/photography">streets
+            photographing</nuxt-link> everyday life, or volunteering my service to local non-profits and the community at large.</p>
         </div>
       </div>
     </section>
@@ -46,34 +48,5 @@
     &.is-spaced
       .hero-body
         padding: 1rem 2rem
-
-  /*.title*/
-  /*  font-size: 10vw !important*/
-
-  /*  @media screen and (min-width: 1024px)*/
-  /*    font-size: 8vw !important*/
-  /*  @media screen and (min-width: 1200px)*/
-  /*    font-size: 7vw !important*/
-  /*  @media screen and (min-width: 1600px)*/
-  /*    font-size: 6vw !important*/
-  /*  @media screen and (min-width: 1920px)*/
-  /*    font-size: 5vw !important*/
-  /*  @media screen and (min-width: 2160px)*/
-  /*    font-size: 4vw !important*/
-
-
-  /*.subtitle*/
-  /*  font-size: 8vw !important*/
-
-  /*  @media screen and (min-width: 1024px)*/
-  /*    font-size: 6vw !important*/
-  /*  @media screen and (min-width: 1200px)*/
-  /*    font-size: 5vw !important*/
-  /*  @media screen and (min-width: 1600px)*/
-  /*    font-size: 4vw !important*/
-  /*  @media screen and (min-width: 1920px)*/
-  /*    font-size: 3vw !important*/
-  /*  @media screen and (min-width: 2160px)*/
-  /*    font-size: 2vw !important*/
 
 </style>
