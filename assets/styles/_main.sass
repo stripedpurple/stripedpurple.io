@@ -3,6 +3,9 @@ $brand-color: #6465be
 $primary: $brand-color
 $link: $primary
 $link-hover: darken($primary, 10%)
+$radius-small: .25rem
+$radius: .25rem
+$radius-large: .25rem
 
 // Imports
 @import "~bulma/bulma"
@@ -12,12 +15,20 @@ html, body
   overscroll-behavior: none
   -ms-overflow-style: none  /* IE and Edge */
   scrollbar-width: none  /* Firefox */
+  font-size: 16px
+  @media screen and (min-width: 768px)
+    font-size: 1.75vw
+  @media screen and (min-width: 1024px)
+    font-size: 1.5vw
+  @media screen and (min-width: 1200px)
+    font-size: 1.25vw
+  @media screen and (min-width: 1600px)
+    font-size: 1vw
 
   &::-webkit-scrollbar
     display: none
 
 body
-  font-size: 16px
   padding: 0
   margin: 0
   //background: white
@@ -54,3 +65,6 @@ div, p
 .button
   @media screen and (max-width: 768px)
     width: 100%
+
+.has-text-periwinkle
+  color: #526488
