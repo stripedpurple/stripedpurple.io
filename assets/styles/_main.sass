@@ -8,7 +8,36 @@ $radius: .25rem
 $radius-large: .25rem
 
 // Imports
-@import "~bulma/bulma"
+@import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/functions"
+@import "~bulma/sass/utilities/derived-variables"
+@import "~bulma/sass/utilities/animations"
+@import "~bulma/sass/utilities/mixins"
+@import "~bulma/sass/utilities/controls"
+//
+@import "~bulma/sass/base/minireset"
+@import "~bulma/sass/base/generic"
+@import "~bulma/sass/base/helpers"
+
+@import "~bulma/sass/components/navbar"
+
+@import "~bulma/sass/elements/button"
+@import "~bulma/sass/elements/icon"
+@import "~bulma/sass/elements/image"
+@import "~bulma/sass/elements/progress"
+@import "~bulma/sass/elements/title"
+
+@import "~bulma/sass/grid/columns"
+
+@import "~bulma/sass/helpers/color"
+@import "~bulma/sass/helpers/typography"
+@import "~bulma/sass/helpers/visibility"
+
+@import "~bulma/sass/layout/hero"
+@import "~bulma/sass/layout/section"
+
+@import "stripedpurple"
+
 
 // Generic
 html, body
@@ -56,8 +85,9 @@ p:not(:last-child)
   margin-right: .75rem
 
 
-.section.is-fullheight
-  min-height: 100vh
+.section
+  &.is-fullheight
+    min-height: 100vh
 
 .columns.is-reversed-tablet
   @media(min-width: $tablet +1)

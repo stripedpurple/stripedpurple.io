@@ -1,13 +1,18 @@
 <template>
   <div class="section is-fullheight is-flex">
-    <div class="container">
+    <div class="container is-fluid">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <logo class="wow fadeInUpBig"/>
           <br>
           <h1 class="title  wow fadeInUpBig">Austin Barrett</h1>
           <h2 class="subtitle  wow fadeInUpBig">Photographer, Developer, &amp; Magician Extraordinaire
-            ♣️♥️♠️♦️</h2>
+            <span class="close">
+              <sp-icon icon="club" :paths="3"/>
+              <sp-icon icon="heart" :paths="2"/>
+              <sp-icon icon="spade" :paths="2"/>
+              <sp-icon icon="diamond" :paths="2"/>
+            </span>️</h2>
           <div class="buttons is-centered">
 
             <!--   About      -->
@@ -28,42 +33,42 @@
             <b-tooltip label="@stripedpurple" type="is-dark">
               <a href="https://www.instagram.com/stripedpurple/" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="instagram" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="instagram"/></a>
             </b-tooltip>
 
             <b-tooltip label="@viruscmd" type="is-dark">
               <a href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="github" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="github"/></a>
             </b-tooltip>
 
             <b-tooltip label="@stripedpurple" type="is-dark">
               <a href="" target="_blank" rel="noopener noreferrer" class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="medium" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="medium"/></a>
             </b-tooltip>
 
             <b-tooltip label="@stripedpurple" type="is-dark">
               <a href="https://codepen.io/stripedpurple" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="codepen" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="codepen"/></a>
             </b-tooltip>
 
             <b-tooltip label="@_stripedpurple" type="is-dark">
               <a href="https://twitter.com/_stripedpurple" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="twitter" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="twitter"/></a>
             </b-tooltip>
 
             <b-tooltip label="@stripedpurple" type="is-dark">
               <a href="https://www.linkedin.com/in/stripedpurple/" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
-                <b-icon pack="fab" icon="linkedin" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="linkedin"/></a>
             </b-tooltip>
 
             <b-tooltip label="austin@stripedpurple.io" type="is-dark">
               <a href="mailto:austin@stripedpurple.io?subject=Website Contact" target="_blank"
                  rel="noopener noreferrer" class="has-text-grey-dark" >
-                <b-icon pack="fas" icon="paper-plane" custom-class="fa-fw"/></a>
+                <sp-icon size="is-medium is-size-4" icon="plane"/></a>
             </b-tooltip>
 
           </div>
@@ -75,9 +80,11 @@
 
 <script>
   import Logo from '~/components/Logo.vue'
+  import SpIcon from "../components/sp-icon";
 
   export default {
     components: {
+      SpIcon,
       Logo
     },
     data() {
@@ -87,9 +94,12 @@
 </script>
 
 <style scoped lang="sass">
+  .close
+    .icon:not(:last-child)::v-deep
+      margin-right: -0.5rem
   html,body
     &.has-navbar-fixed-top
-      padding-top: 0
+      padding-top: 0 !important
 
   .is-flex
     place-items: center

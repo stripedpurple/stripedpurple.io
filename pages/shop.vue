@@ -10,14 +10,13 @@
             <a class="button is-medium is-dark"
                       href="https://stripedpurple.darkroom.tech/"
                       target="_blank" rel="noopener noreferrer">
-              <img class="image" src="/img/darkroom.svg" alt="red bubble logo" style="height: 100%">
-              &nbsp;&nbsp;Dark Room
+              <sp-icon icon="darkroom"/>&nbsp;&nbsp;&nbsp;&nbsp;Dark Room
             </a>
             <a class="button is-medium is-dark"
                href="https://www.redbubble.com/people/VCOBA/shop"
                target="_blank" rel="noopener noreferrer">
-              <img class="image" src="/img/redbubble.svg" alt="red bubble logo" style="height: 100%">
-              &nbsp;&nbsp;Red Bubble
+              <sp-icon icon="redbubble"/>
+              &nbsp;&nbsp;&nbsp;&nbsp;Red Bubble
             </a>
           </div>
         </div>
@@ -38,5 +37,4 @@
 </script>
 
 <style lang="sass" scoped>
-
 </style>

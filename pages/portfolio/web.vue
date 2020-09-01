@@ -6,13 +6,15 @@
       <div class="container is-fluid">
         <div :class="`columns is-multiline wow fadeInUp ${key % 2 !== 0 ? 'is-reversed-tablet' : ''}`" v-for="(site,key) in sites" :key="key">
           <div class="column is-4-desktop is-full-tablet">
-            <figure class="image is-5by4"><img :src="site.img" :alt="site.name"></figure>
+            <picture class="image is-5by4">
+              <img :src="site.img" :alt="site.name" loading=lazy>
+            </picture>
           </div>
           <div class="column is-1-desktop is-full-tablet is-hidden-touch"></div>
           <div class="column is-7-desktop is-full-tablet">
             <p class="title">{{site.name}}</p>
             <div class="subtitle has-text-justified-desktop" v-html="site.description"></div>
-            <a class="button is-dark" :href="site.url" target="_blank" rel="noreferrer noopener"><strong class="is-family-sans-serif	">view live site</strong>&nbsp;&nbsp;<b-icon size="is-small" icon="arrow-right" custom-class="fa-fw"/></a>
+            <a class="button is-dark" :href="site.url" target="_blank" rel="noreferrer noopener"><strong class="is-family-sans-serif	">view live site</strong>&nbsp;&nbsp;<sp-icon size="is-medium is-size-6" icon="chevron-right"/></a>
           </div>
         </div>
       </div>
@@ -33,7 +35,7 @@
           {url: 'https://1time.pw',
             name: '1 Time Password',
             img: '/img/sites/1time.pw_device.png',
-            description: `<p>1time.pw it\'s like snapchat for secrets. Need to send a password? Love Note? Haiku? This is the place.</p><br><p>1time.pw is a simple tool for securely share passwords, message, and other text. Message self destruct after its specified expiration time. Messages are never sent to the server. Encryption is done completely client side. In order to enforce the expiration time, the encryption key is stored on the server. The actual encrypted message is stored in the URL.</p>`
+            description: `<p>1time.pw it\'s like snapchat for secrets. Need to send a password? Love Note? Haiku? This is the place.</p><p>1time.pw is a simple tool for securely share passwords, message, and other text. Message self destruct after its specified expiration time. Messages are never sent to the server. Encryption is done completely client side. In order to enforce the expiration time, the encryption key is stored on the server. The actual encrypted message is stored in the URL.</p>`
           },
           {
             url: 'https://texttool.app',
@@ -63,7 +65,7 @@
             url: 'https://admin.biohitechcloud.com',
             name: 'BioHiTech Admin Cloud',
             img: '/img/sites/admin.biohitechcloud.com_device.png',
-            description: `<p>BioHiTech Admin Cloud is a powerful platform providing tools, and technology for BioHiTech's service team and partners</p><br><p>Advance control and diagnostics of remotely deployed machines. AI/ML driven service and and troubleshooting. Everything else need to manage a team of world class technicians.</p>`
+            description: `<p>BioHiTech Admin Cloud is a powerful platform providing tools, and technology for BioHiTech's service team and partners</p><p>Advance control and diagnostics of remotely deployed machines. AI/ML driven service and and troubleshooting. Everything else need to manage a team of world class technicians.</p>`
           },
           {
             url: 'https://entsorgawv.com',
@@ -97,6 +99,7 @@
 
 <style scoped lang="sass">
   .columns
-    padding-top: 3rem
-    padding-bottom: 3rem
+    @media screen and (min-width: 768px)
+      padding-top: 3rem
+      padding-bottom: 3rem
 </style>
