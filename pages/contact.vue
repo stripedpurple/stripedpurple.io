@@ -7,44 +7,37 @@
           <p class="title">Drop me a line!</p>
           <p class="subtitle">you can find me on all of the following</p>
           <b-button size="is-medium" type="is-dark" tag="a" href="https://www.instagram.com/stripedpurple/" target="_blank"
-                    rel="noopener noreferrer"
-                    icon-pack="fab" icon-left="instagram" custom-class="fa-fw">stripedpurple
+                    rel="noopener noreferrer"><sp-icon icon="instagram"/>&nbsp;&nbsp;&nbsp;stripedpurple
           </b-button>
           <br>
 
           <b-button size="is-medium" type="is-dark" tag="a" href="https://github.com/stripedpurple" target="_blank" rel="noopener noreferrer"
-                    icon-pack="fab"
-                    icon-left="github" custom-class="fa-fw">stripedpurple
+                    ><sp-icon icon="github"/>&nbsp;&nbsp;&nbsp;stripedpurple
           </b-button>
           <br>
 
-          <b-button size="is-medium" type="is-dark" tag="a" href="https://medium.com/@stripedpurple" target="_blank" rel="noopener noreferrer" icon-pack="fab"
-                    icon-left="medium"
-                    custom-class="fa-fw">stripedpurple
+          <b-button size="is-medium" type="is-dark" tag="a" href="https://medium.com/@stripedpurple" target="_blank" rel="noopener noreferrer"
+                    ><sp-icon icon="medium"/>&nbsp;&nbsp;&nbsp;stripedpurple
           </b-button>
           <br>
 
           <b-button size="is-medium" type="is-dark" tag="a" href="https://codepen.io/stripedpurple" target="_blank"
-                    rel="noopener noreferrer"
-                    icon-pack="fab" icon-left="codepen" custom-class="fa-fw">stripedpurple
+                    rel="noopener noreferrer"><sp-icon icon="codepen"/>&nbsp;&nbsp;&nbsp;stripedpurple
           </b-button>
           <br>
 
           <b-button size="is-medium" type="is-dark" tag="a" href="https://twitter.com/_stripedpurple" target="_blank"
-                    rel="noopener noreferrer"
-                    icon-pack="fab" icon-left="twitter" custom-class="fa-fw">_stripedpurple
+                    rel="noopener noreferrer"><sp-icon icon="twitter"/>&nbsp;&nbsp;&nbsp;_stripedpurple
           </b-button>
           <br>
 
           <b-button size="is-medium" type="is-dark" tag="a" href="https://www.linkedin.com/in/stripedpurple/" target="_blank"
-                    rel="noopener noreferrer"
-                    icon-pack="fab" icon-left="linkedin" custom-class="fa-fw">stripedpurple
+                    rel="noopener noreferrer"><sp-icon icon="linkedin"/>&nbsp;&nbsp;&nbsp;stripedpurple
           </b-button>
           <br>
 
           <b-button size="is-medium" type="is-dark" tag="a" href="mailto:austin@stripedpurple.io?subject=Website Contact"
-                    target="_blank" rel="noopener noreferrer" icon-pack="fas" icon-left="paper-plane"
-                    custom-class="fa-fw">austin@stripedpurple.io
+                    target="_blank" rel="noopener noreferrer"><sp-icon icon="plane"/>&nbsp;&nbsp;&nbsp;austin@stripedpurple.io
           </b-button>
           <br>
 
