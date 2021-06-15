@@ -37,7 +37,7 @@
             </b-tooltip>
 
             <b-tooltip label="@viruscmd" type="is-dark">
-              <a href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/stripedpurple" target="_blank" rel="noopener noreferrer"
                  class="has-text-grey-dark" style="margin-right: 0.5rem">
                 <sp-icon size="is-medium is-size-4" icon="github"/></a>
             </b-tooltip>

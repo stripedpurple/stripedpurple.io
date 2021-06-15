@@ -7,7 +7,7 @@
             <sp-icon icon="instagram"/>
           </a>
 
-          <a href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/stripedpurple" target="_blank" rel="noopener noreferrer"
              class="wow fadeInUpBig has-text-grey-dark">
             <sp-icon icon="github"/>
           </a>

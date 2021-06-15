@@ -12,9 +12,9 @@
           </b-button>
           <br>
 
-          <b-button size="is-medium" type="is-dark" tag="a" href="https://github.com/viruscmd" target="_blank" rel="noopener noreferrer"
+          <b-button size="is-medium" type="is-dark" tag="a" href="https://github.com/stripedpurple" target="_blank" rel="noopener noreferrer"
                     icon-pack="fab"
-                    icon-left="github" custom-class="fa-fw">viruscmd
+                    icon-left="github" custom-class="fa-fw">stripedpurple
           </b-button>
           <br>
 
