@@ -44,10 +44,10 @@
             description: `<p>Find and replace in a body of text. Extract links from HTML. Strip tags from HTML. Explore common text ciphers. And much more.</p><p>Text Tools is a suite of tools providing live transformation, encoding/decoding, encrypting of text.</p>`
           },
           {
-            url: 'https://biohitech.com',
+            url: 'http://biohitech.stripedpurple.io/',
             name: 'BioHiTech Global',
             img: '/img/sites/biohitech.com_device.png',
-            description: 'At BioHiTech Global, where sustainability meets doability. BioHiTech is working to change the future of the waste management services industry by creating a technology-driven services company to cost-effectively reduce the environmental impact of waste disposal. Helping reduce waste generation, significantly reduce landfill usage, and create a valuable renewable fuel.'
+            description: `<p>BioHiTech Global, where sustainability meets do-ability. BioHiTech is working to change the future of the waste management services industry by creating a technology-driven services company to cost-effectively reduce the environmental impact of waste disposal. Helping reduce waste generation, significantly reduce landfill usage, and create a valuable renewable fuel.</p>`
           },
           {
             url: 'https://demo.biohitechcloud.com',
