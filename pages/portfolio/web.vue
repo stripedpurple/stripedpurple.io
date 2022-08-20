@@ -68,7 +68,7 @@
             description: `<p>BioHiTech Admin Cloud is a powerful platform providing tools, and technology for BioHiTech's service team and partners</p><p>Advance control and diagnostics of remotely deployed machines. AI/ML driven service and and troubleshooting. Everything else need to manage a team of world class technicians.</p>`
           },
           {
-            url: 'https://entsorgawv.com',
+            url: 'https://ewv.stripedpurple.io',
             name: 'Entsorga West Virginia',
             img: '/img/sites/entsorgawv.com_device.png',
             description: `<p>By utilizing the HEBioT MBT system, Entsorga WV recovers bio-mass, plastics and other carbon based materials from the mixed municipal solid waste (MSW) stream and convert them into a safe alternative fuel source.  When collecting these sources of MSW, Entsorga WV removes other valuable recyclable commodities such as metals and glass from the HEBioT receiving stream and put them into the local municipality recycling stream.  This is in conjunction with the Berkeley County Recycling program.  Together this will increase recycling rates for the municipality.</p>`
