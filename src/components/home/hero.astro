@@ -1,0 +1,22 @@
+---
+import GradiantTitle from "../common/gradiantTitle.astro";
+---
+
+<section class="max-h-xl h-screen flex flex-col justify-between items-center px-8 md:px-16 py-4">
+    <div aria-hidden="true"></div>
+   <div class="flex justify-between items-center w-full">
+       <div class="max-w-lg">
+           <GradiantTitle size={'7xl'} fromColor={'purple'} viaColor={'indigo'} class={'mb-4'}>Austin Barrett</GradiantTitle>
+           <p class="text-lg sm:text-xl md:text-2xl">Web UI/UX Developer, <wbr/>Photographer/Digital Artist, <wbr/>Magician Extraordinaire</p>
+        </div>
+        <img src="https://via.placeholder.com/350x720/FF23de/FFFFFF?Text=Profile" alt="">
+    </div>
+    <div>
+        <a href="#scrollTo" title="click or scroll for more" role='button'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-12 h-12 motion-safe:animate-bounce">
+                <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z" clip-rule="evenodd" />
+            </svg>          
+        </a>
+    </div>
+</section>
+<span id="scrollTo"/>

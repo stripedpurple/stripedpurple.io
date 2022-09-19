@@ -1,0 +1,149 @@
+---
+import type {Size} from "../../types/size"
+import type {Direction} from "../../types/direction"
+import type {BaseColors} from "../../types/colors"
+import {getClasses} from "../../untils/getClasses"
+
+export interface Props extends astroHTML.JSX.HTMLAttributes{
+    toColor?: BaseColors
+    fromColor?: BaseColors
+    viaColor?: BaseColors
+    size?: Size
+    direction?: Direction
+    as?: ''
+    // class?: string
+}
+
+const {
+    fromColor = 'indigo',
+    toColor = 'pink',
+    viaColor = '',
+    size = '2xl',
+    direction = 'tr',
+    as = 'h1',
+} = Astro.props as Props
+
+
+const directionClass = getClasses({
+    'bg-gradient-to-t': direction === 't',
+    'bg-gradient-to-tr': direction === 'tr',
+    'bg-gradient-to-r': direction === 'r',
+    'bg-gradient-to-br': direction === 'br',
+    'bg-gradient-to-b': direction === 'b',
+    'bg-gradient-to-bl': direction === 'bl',
+    'bg-gradient-to-l': direction === 'l',
+    'bg-gradient-to-tl': direction === 'tl',
+})
+
+const colorClasses = getClasses({
+    // To Color
+    'to-amber-500': toColor === 'amber',
+    'to-blue-500': toColor === 'blue',
+    'to-cyan-500': toColor === 'cyan',
+    'to-emerald-500': toColor === 'emerald',
+    'to-fuchsia-500': toColor === 'fuchsia',
+    'to-gray-500': toColor === 'gray',
+    'to-green-500': toColor === 'green',
+    'to-indigo-500': toColor === 'indigo',
+    'to-lime-500': toColor === 'lime',
+    'to-neutral-500': toColor === 'neutral',
+    'to-orange-500': toColor === 'orange',
+    'to-pink-500': toColor === 'pink',
+    'to-purple-500': toColor === 'purple',
+    'to-red-500': toColor === 'red',
+    'to-rose-500': toColor === 'rose',
+    'to-sky-500': toColor === 'sky',
+    'to-slate-500': toColor === 'slate',
+    'to-stone-500': toColor === 'stone',
+    'to-teal-500': toColor === 'teal',
+    'to-violet-500': toColor === 'violet',
+    'to-yellow-500': toColor === 'yellow',
+    'to-zinc-500': toColor === 'zinc',
+    'to-inherit': toColor === 'inherit',
+    'to-current': toColor === 'current',
+    'to-transparent': toColor === 'transparent',
+    'to-black': toColor === 'black',
+    'to-white': toColor === 'white',
+
+    // From Color
+    'from-amber-500': fromColor === 'amber',
+    'from-blue-500': fromColor === 'blue',
+    'from-cyan-500': fromColor === 'cyan',
+    'from-emerald-500': fromColor === 'emerald',
+    'from-fuchsia-500': fromColor === 'fuchsia',
+    'from-gray-500': fromColor === 'gray',
+    'from-green-500': fromColor === 'green',
+    'from-indigo-500': fromColor === 'indigo',
+    'from-lime-500': fromColor === 'lime',
+    'from-neutral-500': fromColor === 'neutral',
+    'from-orange-500': fromColor === 'orange',
+    'from-pink-500': fromColor === 'pink',
+    'from-purple-500': fromColor === 'purple',
+    'from-red-500': fromColor === 'red',
+    'from-rose-500': fromColor === 'rose',
+    'from-sky-500': fromColor === 'sky',
+    'from-slate-500': fromColor === 'slate',
+    'from-stone-500': fromColor === 'stone',
+    'from-teal-500': fromColor === 'teal',
+    'from-violet-500': fromColor === 'violet',
+    'from-yellow-500': fromColor === 'yellow',
+    'from-zinc-500': fromColor === 'zinc',
+    'from-inherit': fromColor === 'inherit',
+    'from-current': fromColor === 'current',
+    'from-transparent': fromColor === 'transparent',
+    'from-black': fromColor === 'black',
+    'from-white': fromColor === 'white',
+
+    // Via Color
+    'via-amber-500': viaColor === 'amber',
+    'via-blue-500': viaColor === 'blue',
+    'via-cyan-500': viaColor === 'cyan',
+    'via-emerald-500': viaColor === 'emerald',
+    'via-fuchsia-500': viaColor === 'fuchsia',
+    'via-gray-500': viaColor === 'gray',
+    'via-green-500': viaColor === 'green',
+    'via-indigo-500': viaColor === 'indigo',
+    'via-lime-500': viaColor === 'lime',
+    'via-neutral-500': viaColor === 'neutral',
+    'via-orange-500': viaColor === 'orange',
+    'via-pink-500': viaColor === 'pink',
+    'via-purple-500': viaColor === 'purple',
+    'via-red-500': viaColor === 'red',
+    'via-rose-500': viaColor === 'rose',
+    'via-sky-500': viaColor === 'sky',
+    'via-slate-500': viaColor === 'slate',
+    'via-stone-500': viaColor === 'stone',
+    'via-teal-500': viaColor === 'teal',
+    'via-violet-500': viaColor === 'violet',
+    'via-yellow-500': viaColor === 'yellow',
+    'via-zinc-500': viaColor === 'zinc',
+    'via-inherit': viaColor === 'inherit',
+    'via-current': viaColor === 'current',
+    'via-transparent': viaColor === 'transparent',
+    'via-black': viaColor === 'black',
+    'via-white': viaColor === 'white',
+})
+
+const sizeClasses = getClasses({
+    'text-xs': size === 'xs',
+    'text-sm': size === 'sm',
+    'text-base': size === 'md',
+    'text-lg': size === 'lg',
+    'text-xl': size === 'xl',
+    'text-2xl': size === '2xl',
+    'text-3xl': size === '3xl',
+    'text-4xl': size === '4xl',
+    'text-5xl': size === '5xl',
+    'text-6xl': size === '6xl',
+    'text-7xl': size === '7xl',
+    'text-8xl': size === '8xl',
+    'text-9xl': size === '9xl',
+})
+
+
+const Tag = as
+---
+
+<Tag class={`${Astro.props?.class}`}>
+<span class={`${colorClasses} ${directionClass} ${sizeClasses} bg-clip-text font-bold text-transparent inlin`}><slot/></span>
+</Tag>

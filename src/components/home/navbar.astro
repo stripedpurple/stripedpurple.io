@@ -1,0 +1,45 @@
+<span id="scrollTop"/>
+<nav class="flex justify-center items-center gap-6 px-8 sm:px-16 py-8 text-lg font-medium m-0 w-full z-20 absolute top" id='navbar'>
+    <a href="" class="link">Home</a>
+    <a href="" class="link">What I do</a>
+    <a href="" class="link">test</a>
+    <a href="" class="link">test</a>
+    <a href="#footer" class="link">contact</a>
+</nav>
+
+<style>
+    nav {
+    counter-reset: section;
+    }
+
+    a::before {
+    counter-increment: section;
+    content: "0"counter(section) ": ";
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    }
+</style>
+
+<script defer>
+    window.addEventListener('load',() => {
+    const obserables = document.getElementById('scrollTop')
+    const navbar = document.getElementById('navbar')
+    const io = new IntersectionObserver((entries)=>{
+
+        console.log(entries);
+        entries.forEach(entry => {
+          if(!entry.isIntersecting){
+             navbar.classList.add('backdrop-blur-lg','fixed')
+             navbar.classList.remove('top', 'absolute')
+          } else {
+            navbar.classList.remove('backdrop-blur-lg','fixed')
+            navbar.classList.add('top', 'absolute')
+          }
+      }, {threshold: [1],rootMargin: '-400px'})
+  });
+
+
+  io.observe(obserables)
+})
+</script>

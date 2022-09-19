@@ -1,0 +1,72 @@
+---
+import GradiantTitle from "../common/gradiantTitle.astro";  
+import Card from "../common/card.astro";
+import Section from "../common/section.astro";
+
+import ReactLogo from "../../assets/logos/react.svg"
+import SvelteLogo from "../../assets/logos/svelte.svg"
+import VueLogo from "../../assets/logos/vue.svg"
+import TailwindLogo from "../../assets/logos/tailwind.svg"
+import TypescriptLogo from "../../assets/logos/typescript.svg"
+import GoLogo from "../../assets/logos/golang.svg"
+import PythonLogo from "../../assets/logos/python.svg"
+import NodeJsLogo from "../../assets/logos/node.svg"
+import PSLogo from "../../assets/logos/photoshop.svg"
+import AILogo from "../../assets/logos/illustrator.svg"
+import XDLogo from "../../assets/logos/xd.svg"
+import PRLogo from "../../assets/logos/premiere.svg"
+import SonyLogo from "../../assets/logos/sony.svg"
+import CanonLogo from "../../assets/logos/canon.svg"
+---
+
+<Section class="m-auto max-w-7xl">
+    <GradiantTitle size={'5xl'} fromColor={'purple'} viaColor={'indigo'} class="mb-8 text-center">The Things I Do</GradiantTitle>
+    <div class="flex px-8 gap-8">
+
+        <Card class='text-center w-full grow py-4 flex flex-col'>
+            <p class="text-3xl font-bold text-white mb-3">Frontend</p>
+                <p class="text-white text-center max-w-sm mb-4 h-full">
+                    Passionate about UI/UX. 7+ years of development experience in HTML, CSS, JS/TS, React, Vue, Svelte and NuxtJS frameworks.
+                </p> 
+                <div class="flex gap-4 justify-center mb-3 flex-wrap">
+                    <img src={TypescriptLogo} alt="Typescript" class="h-8"/>
+                    <img src={TailwindLogo} alt="Tailwind" class="h-8"/>
+                    <img src={ReactLogo} alt="React JS" class="h-8"/>
+                    <img src={SvelteLogo} alt="Svelte" class="h-8"/>
+                    <img src={VueLogo} alt="Vue Js" class="h-8"/>
+                </div>
+            </Card>
+
+
+        <Card class='text-center w-full grow py-4 flex flex-col'>
+                <p class="text-3xl font-bold text-white mb-3">Software Development</p>
+                <p class="text-white text-center max-w-sm mb-4 h-full">
+                    Experienced in both functional and OOP: Go, Python, JavaScript, TypeScript.
+                </p>
+                <div class="flex gap-4 justify-center mb-3 flex-wrap">
+                    <img src={GoLogo} alt="Go Lang" class="h-8"/>
+                    <img src={PythonLogo} alt="Python" class="h-8"/>
+                    <img src={NodeJsLogo} alt="NodeJs" class="h-8"/>
+                </div>
+            </Card>
+
+
+            <Card class='text-center w-full grow py-4 flex flex-col'>
+                <p class="text-3xl font-bold text-white mb-3">Photography/Digital Art</p> 
+                <p class="text-white text-center max-w-sm mb-4 h-full">
+                    Raised on film, forge in photoshop, inspired by life
+                </p> 
+                <div class="flex gap-4 justify-center mb-3 flex-wrap">
+                    <img src={PSLogo} alt="Adobe Photoshop" class="h-8"/>
+                    <img src={AILogo} alt="Adobe Illustrator" class="h-8"/>
+                    <img src={XDLogo} alt="Adobe XD" class="h-8"/>
+                    <img src={PRLogo} alt="Adobe Premiere Pro" class="h-8"/>
+                </div>
+                <div class="flex gap-4 justify-center mb-3 flex-wrap">
+                    <img src={SonyLogo} alt="Sony Cameras" class="w-16"/>
+                    <img src={CanonLogo} alt="Canon Cameras" class="w-16"/>
+                </div>
+            </Card>
+
+        </div>
+</Section>
