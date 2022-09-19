@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0edd179c-0bc2-456e-a64f-549acccfedef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/portfolio/web.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolio/web.vue" afterDir="false" />
+    <list default="true" id="eef4e407-bfb9-4ba7-a532-20ae1de9be13" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25Ok48oB5OysT8oZqreezIDBUJV" />
+  <component name="ProjectId" id="2DfrSXfQj0lnizc5BsSHAJUXS8K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,30 +36,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
-    <property name="vuejs.nuxt.types-notification-shown" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0edd179c-0bc2-456e-a64f-549acccfedef" name="Changes" comment="" />
-      <created>1645405327454</created>
+      <changelist id="eef4e407-bfb9-4ba7-a532-20ae1de9be13" name="Changes" comment="" />
+      <created>1661100983725</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645405327454</updated>
-      <workItem from="1645405328520" duration="653000" />
+      <updated>1661100983725</updated>
+      <workItem from="1661100986633" duration="566000" />
     </task>
     <servers />
   </component>
