@@ -1,5 +1,6 @@
 ---
 import '../assets/styles/main.css'
+import Navbar from '../components/home/navbar.astro'
 ---
 
 <!DOCTYPE html>
@@ -11,9 +12,12 @@ import '../assets/styles/main.css'
     <title>Document</title>
 </head>
 <body class="bg-slate-900 text-white">
-    <a href="#main" class="focus:outline-none focus:ring-2  focus:ring-white p-4 bg-pink-600 text-center text-2xl -translate-y-full fixed focus:translate-y-0 w-full motion-safe:transition-all duration-200">Skip to main content</a>
-    <main id="main" class="h-screen overflow-auto motion-safe:scroll-smooth">
-        <slot/>
-    </main>
+    <div class="relative">
+        <a href="#main" class="focus:outline-none focus:ring-2  focus:ring-white p-4 bg-pink-600 text-center text-2xl -translate-y-full fixed focus:translate-y-0 w-full motion-safe:transition-all duration-200 z-50">Skip to main content</a>
+        <Navbar/>
+        <main id="main" class="h-screen overflow-auto motion-safe:scroll-smooth relative">
+            <slot/>
+        </main>
+    </div>
 </body>
 </html>
