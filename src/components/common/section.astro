@@ -1,8 +1,8 @@
 ---
 export type Props = astroHTML.JSX.HTMLAttributes;
-const {...rest} = Astro.props as Props;
+const { ...rest } = Astro.props as Props;
 ---
 
 <section class={`${Astro.props?.class} p-8 sm:p-16`} {...rest}>
-    <slot/>
+  <slot />
 </section>

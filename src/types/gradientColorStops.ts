@@ -1,6 +1,5 @@
 // https://tailwindcss.com/docs/gradient-color-stops
 
-import type {BaseColors} from "./colors"
+import type { BaseColors } from "./colors";
 
-export type GradientColorStops = BaseColors
-
+export type GradientColorStops = BaseColors;
