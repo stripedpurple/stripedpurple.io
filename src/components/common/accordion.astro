@@ -1,0 +1,56 @@
+---
+---
+
+<div class="expanded accordion">
+  <button class="btn">
+    <slot name="button" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="icon"
+      aria-hidden="true"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"
+      ></path>
+    </svg>
+  </button>
+
+  <div class="description">
+    <slot name="content" />
+  </div>
+</div>
+
+<style>
+  .btn {
+    @apply flex items-center justify-between w-full rounded-lg bg-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 py-3 px-4 mb-4;
+  }
+
+  .expanded .icon {
+    @apply rotate-45;
+  }
+
+  .icon {
+    @apply h-6 w-6 transition-all duration-200;
+  }
+
+  .expanded .description {
+    @apply py-3 px-4 sm:py-6 sm:px-8 max-h-screen mb-6;
+  }
+
+  .description {
+    @apply rounded-lg mb-0 bg-slate-800 max-h-0 overflow-hidden transition-all;
+  }
+</style>
+
+<script>
+  let ac = document.querySelectorAll('.accordion button')
+
+  ac.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        el.parentElement.classList.toggle('expanded')
+    })
+  })
+</script>
