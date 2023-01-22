@@ -1,0 +1,39 @@
+---
+import type {HTMLAttributes} from 'astro/types'
+import { getClasses } from '../../untils/getClasses'
+
+type InheritProps = HTMLAttributes<'a'> | HTMLAttributes<'button'>
+interface Props extends InheritProps {
+    color?: 'blue' | 'green' | 'red' | 'indigo' | 'dark' | 'primary'
+    size?: 'sm' | 'md' | 'lg'
+    fullWidth?: boolean
+}
+const {color = 'indigo', size = 'md', fullWidth = false, ...rest} = Astro.props as Props
+
+const classes = getClasses({
+    // Classes that are always added
+    'inline-flex justify-center items-center rounded-md select-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:ring-offset-primary-900': true,
+    // Colors
+    // 'bg-transparent border-2 border-primary-600 text-primary-600': color === 'secoundary',
+    'bg-blue-600 text-blue-100': color === 'blue',
+    'bg-indigo-600 text-indigo-100': color === 'indigo',
+    'bg-green-600 text-green-100': color === 'green',
+    'bg-red-600 text-red-100': color === 'red',
+    'bg-primary-800 text-primary-100': color === 'primary' || color === 'dark',
+
+    // Size
+    'px-2.5 py-2 text-sm': size === 'sm',
+    'px-3 py-2': size === 'md',
+    'px-3 py-2.5 text-lg': size === 'lg',
+
+    // Fullwidth
+    'w-full': fullWidth,
+})
+
+
+const Tag = !rest.href ? 'button' : 'a'
+---
+
+<Tag class={`${classes}`} {...rest}>
+    <slot/>
+</Tag>

@@ -1,52 +1,70 @@
-.link {
-  background: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
-    rgba(0, 100, 200, 1)
-  );
-  background-size: 0 0.25rem, 100% 0.25rem;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.link:hover {
-  background-size: 100% 0.25rem, 0 0.25rem;
-}
-
-.bg-spiral {
-  @apply relative bg-slate-800 transition-all rounded-lg focus:outline-none;
-}
-
-.bg-spiral::before {
-  content: "";
-  background: linear-gradient(
-    135deg,
-    #db2777,
-    #9333ea,
-    #4f46e5,
-    #4c1d95,
-    #db2777
-  );
-  background-size: 200% 100%;
-  @apply rounded-lg transition-all duration-300 opacity-0 absolute z-[-1] top-0 bottom-0 left-0 right-0 m-0;
-}
-
-.bg-spiral:focus::before,
-.bg-spiral:hover::before {
-  opacity: 1;
-  content: "";
-  position: absolute;
-  animation: gradient 3s ease-in-out infinite alternate-reverse;
-  @apply -m-1;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0%;
+@layer components {
+  section {
+    scroll-padding-top: 3rem;
   }
-  100% {
-    background-position: 100%;
+
+  .link {
+    background: linear-gradient(
+      to right,
+      #db2777,
+      #9333ea,
+      #4f46e5,
+      #4c1d95
+    );
+    background-size: 0 0.25rem, 100% 0.25rem;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .link:hover {
+    background-size: 100% 0.25rem, 0 0.25rem;
+  }
+  
+  .bg-spiral {
+    background: linear-gradient(
+      135deg,
+      #db2777,
+      #9333ea,
+      #4c1d95,
+      #4f46e5,
+      #4c1d95,
+      #9333ea,
+      #db2777
+    );
+    animation: gradient 4s linear infinite alternate;
+    background-size: 300% 100%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+}
+
+@layer utilities {
+  .truncate-none {
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+  }
+
+
+  @font-face {
+    font-family: "Captura Now Italic";
+    src: url("../CapturaNow-BlackItalic.woff2");
+  }
+
+  .title {
+    font-family: "Captura Now Italic";
   }
 }

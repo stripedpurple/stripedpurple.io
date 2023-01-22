@@ -1,22 +1,17 @@
-<nav
-  class="flex justify-center items-center gap-6 sm:gap-8 px-8 sm:px-16 py-8 text-lg font-medium m-0 w-full z-20 absolute top-0 capitalize"
-  id="navbar"
+<div class="select-none py-4 px-6 flex items-center justify-center m-0 w-full z-20 absolute top-0" id="navbar">
+  <nav
+  class="flex justify-center rounded-full items-center gap-6 sm:gap-8 px-6 py-2 text-lg font-medium capitalize backdrop-blur-sm bg-primary-800/50"
 >
-  <a href="" class="link">Home</a>
-  <a href="" class="link">What I do</a>
-  <a href="" class="link">test</a>
-  <a href="" class="link">test</a>
+  <a href="#" class="link">Home</a>
+  <a href="#whatIDo" class="link">What I do</a>
+  <a href="#projectHighlight" class="link">Projects</a>
+  <a href="#career" class="link">Career</a>
   <a href="#footer" class="link">contact</a>
 </nav>
+</div>
 
 <style>
-  nav {
-    counter-reset: section;
-  }
-
   a::before {
-    /* counter-increment: section;
-    content: "0"counter(section) ": "; */
     font-size: 1rem;
     text-align: center;
     vertical-align: middle;
@@ -32,18 +27,12 @@
         (entry) => {
           if (!entry.isIntersecting) {
             navbar.classList.add(
-              "backdrop-blur-lg",
               "fixed",
-              "border-b",
-              "border-b-slate-500/25"
             );
             navbar.classList.remove("top-0", "absolute");
           } else {
             navbar.classList.remove(
-              "backdrop-blur-lg",
               "fixed",
-              "border-b",
-              "border-b-slate-500/25"
             );
             navbar.classList.add("top-0", "absolute");
           }

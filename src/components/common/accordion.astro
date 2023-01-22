@@ -25,7 +25,7 @@
 
 <style>
   .btn {
-    @apply flex items-center justify-between w-full rounded-lg bg-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 py-3 px-4 mb-4;
+    @apply flex items-center justify-between w-full rounded-lg bg-violet-700 focus:bg-violet-600 hover:bg-violet-600 py-3 px-4 mb-4;
   }
 
   .expanded .icon {
@@ -37,11 +37,11 @@
   }
 
   .expanded .description {
-    @apply py-3 px-4 sm:py-6 sm:px-8 max-h-screen mb-6;
+    @apply py-3 px-4 sm:py-6 sm:px-8 max-h-screen mb-6 scale-100 opacity-100;
   }
 
   .description {
-    @apply rounded-lg mb-0 bg-slate-800 max-h-0 overflow-hidden transition-all;
+    @apply rounded-lg mb-0 bg-primary-800 max-h-0 duration-500 overflow-hidden transition-all scale-75 opacity-0;
   }
 </style>
 

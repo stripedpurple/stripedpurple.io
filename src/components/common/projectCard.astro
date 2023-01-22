@@ -1,0 +1,19 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+
+interface Props extends HTMLAttributes<'a'>{
+    img: string
+    title: string
+    description: string
+    to: string
+}
+const {img, title, description, to, ...props} = Astro.props as Props
+---
+
+<a href={to} class={`h-full block w-full relative sm:min-h-[5vw] min-h-[30vh] overflow-hidden group ${props.class}`} target="_blank" rel="noopener">
+    <span class="block inset-0 bg-cover bg-no-repeat bg-center absolute group-hover:scale-110 transition-all ease-in-out" style={`background-image: url(${img})`}></span>
+    <span class="block p-4 sm:p-8 absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full mt-24 select-none ">
+        <dt class="text-lg sm:text-2xl lg:text-3xl text-white font-bold uppercase title mb-3">{title}</dt>
+        <dd class="text-gray-200 sm:text-xl lg:text-2xl truncate md:truncate-none group-hover:truncate-none transition-all">{description}</dd>
+    </span>
+</a>

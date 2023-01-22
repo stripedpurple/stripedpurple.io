@@ -1,0 +1,22 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+interface Props extends HTMLAttributes<'input'>{
+    label?: string
+}
+
+const {label, ...props} = Astro.props as Props
+---
+
+<div class="flex flex-col mb-4">
+    <label class="label" for="">{label}</label>
+    <input class="input"/>
+</div>
+
+<style>
+    .label {
+        @apply text-sm font-medium w-full empty:hidden mb-2;
+    }
+    .input {
+        @apply rounded-md px-3 py-2 bg-primary-500/25 text-white border-none focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 focus:ring-offset-primary-900 w-full;
+    }
+</style>

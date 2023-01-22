@@ -1,0 +1,27 @@
+---
+import Button from "../common/button.astro";
+---
+
+<!-- A modal dialog containing a form -->
+<dialog id="favDialog" class="max-w-md w-full bg-primary-900 text-primary-200 rounded-lg backdrop:backdrop-blur-sm backdrop:bg-primary-900/50 px-4 py-3 sm:px-8 sm:py-6">
+    <form method="dialog">
+        <slot/>
+    </form>
+  </dialog>
+  <p>
+    <Button id="showDialog">Show the dialog</Button>
+  </p>
+
+
+<script defer>
+    const dialog = document.querySelector("dialog");
+    const showButton = document.getElementById("showDialog");
+    
+    dialog.addEventListener("click",(e)=> {
+    if (e.target === dialog) dialog.close();
+    });
+    showButton.addEventListener('click', () => {
+        favDialog.showModal();
+    });
+
+</script>

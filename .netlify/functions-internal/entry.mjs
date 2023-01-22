@@ -1528,7 +1528,7 @@ const $$Main = createComponent(async ($$result, $$props, $$slots) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 ${renderHead($$result)}</head>
-<body class="bg-slate-900 text-white">
+<body class="bg-primary-900 text-white">
     <div class="relative">
         <a href="#main" class="focus:outline-none focus:ring-2  focus:ring-white p-4 bg-pink-600 text-center text-2xl -translate-y-full fixed focus:translate-y-0 w-full motion-safe:transition-all duration-200 z-50">Skip to main content</a>
         ${renderComponent($$result, "Navbar", $$Navbar, {})}
@@ -1628,7 +1628,7 @@ const $$GradiantTitle = createComponent(async ($$result, $$props, $$slots) => {
     "to-red-500": toColor === "red",
     "to-rose-500": toColor === "rose",
     "to-sky-500": toColor === "sky",
-    "to-slate-500": toColor === "slate",
+    "to-primary-500": toColor === "primary",
     "to-stone-500": toColor === "stone",
     "to-teal-500": toColor === "teal",
     "to-violet-500": toColor === "violet",
@@ -1655,7 +1655,7 @@ const $$GradiantTitle = createComponent(async ($$result, $$props, $$slots) => {
     "from-red-500": fromColor === "red",
     "from-rose-500": fromColor === "rose",
     "from-sky-500": fromColor === "sky",
-    "from-slate-500": fromColor === "slate",
+    "from-primary-500": fromColor === "primary",
     "from-stone-500": fromColor === "stone",
     "from-teal-500": fromColor === "teal",
     "from-violet-500": fromColor === "violet",
@@ -1682,7 +1682,7 @@ const $$GradiantTitle = createComponent(async ($$result, $$props, $$slots) => {
     "via-red-500": viaColor === "red",
     "via-rose-500": viaColor === "rose",
     "via-sky-500": viaColor === "sky",
-    "via-slate-500": viaColor === "slate",
+    "via-primary-500": viaColor === "primary",
     "via-stone-500": viaColor === "stone",
     "via-teal-500": viaColor === "teal",
     "via-violet-500": viaColor === "violet",
@@ -2372,7 +2372,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
   )}<section id="footer" class="astro-TDZXFCHU">
 <footer class="grid grid-cols-12 grid-rows-6 astro-TDZXFCHU">
 
-    <div class="bg-slate-800 text-white col-span-5 row-span-6 px-8 sm:px-16 py-4 sm:py-8 flex flex-col gap-4 justify-between astro-TDZXFCHU">
+    <div class="bg-primary-800 text-white col-span-5 row-span-6 px-8 sm:px-16 py-4 sm:py-8 flex flex-col gap-4 justify-between astro-TDZXFCHU">
         <div class="astro-TDZXFCHU">
             <h1 class="text-4xl font-bold mb-6 astro-TDZXFCHU">Available for select freelance opportunities</h1>
     

@@ -1,5 +1,11 @@
-<div class="bg-spiral" {...Astro.props}>
+<div class="card" {...Astro.props}>
   <div class={`${Astro.props?.class} rounded-lg py-4 px-6`}>
     <slot />
   </div>
 </div>
+
+<style>
+  .card {
+    @apply focus:before:bg-spiral hover:before:bg-spiral before:absolute before:rounded-xl before:-inset-1 before:opacity-0 hover:before:opacity-100 focus:before:opacity-100 before:duration-300 before:transition-all  before:z-[-1] bg-primary-800 box-border relative rounded-xl focus:outline-none;
+  }
+</style>
