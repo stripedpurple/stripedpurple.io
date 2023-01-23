@@ -2,18 +2,38 @@
 import GradiantTitle from "../common/gradiantTitle.astro";
 import ProjectCard from "../common/projectCard.astro";
 ---
-<section id="projectHighlight">
+<section id="projectHighlight" class="py-12 sm:py-24">
     <GradiantTitle size="5xl" class='mb-8 text-center'>Projects Highlights</GradiantTitle>
     <div class="sm:h-[75vh] sm:grid grid-rows-6 grid-cols-5 grid-flow-row-dense">
-        <ProjectCard class="row-span-3 col-span-2" img="/images/biohitech.com.png" to="https://biohitech.stripedpurple.io/" title='BioHiTech Global' description="Smart Solutions that Drive Zero Waste"/>
-        <ProjectCard class="row-span-6 col-span-3" img="/images/texttool.app.png" to="https://texttool.app" title='Text Tools' description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, cum veniam asperiores incidunt doloremque veritatis alias reiciendis ratione, adipisci amet architecto explicabo provident officiis nesciunt voluptates porro! Labore, accusamus hic!"/>
-        <ProjectCard class="row-span-3 col-span-2" img="/images/scrubspodcast.cc.png" to="https://scrubspodcast.cc" title='Text Tools' description="A collection of string maniplulation tools"/>
+        <ProjectCard 
+            class="row-span-3 col-span-2" 
+            img="/images/texttool.app.png" 
+            to="https://texttool.app"
+            title='Text Tools' 
+            description="A collection of powerful string/text maniplulation tools living right in your browser" />
+        <ProjectCard 
+            class="row-span-6 col-span-3" 
+            img="/images/biohitech.com.png"
+            to="https://biohitech.stripedpurple.io/" 
+            title='BioHiTech Global'
+            titleColor='yellow'
+            description="With combined power of natural science and cutting-edge technologies BioHiTech Global is working to solve complex real-world challenges that threaten our environment, biodiversity, and energy resources." />
+        <ProjectCard 
+            class="row-span-3 col-span-2" 
+            img="/images/scrubspodcast.cc.png" 
+            to="https://scrubspodcast.cc"
+            title='Scrubs Podcast' 
+            titleColor='violet'
+            description="The internet's favorite TV re-watch podcast's unofficial website. Listen as the gang riffs, rememinise, and gets you rolling on the floor." />
     </div>
     <div class="flex justify-end py-4">
-        <a href="/projects" class="hover:-translate-x-2 transition-all duration-200 text-lg sm:text-xl flex items-center px-6 link">view all 
-            <svg class="inline-block h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-          </svg>
-          </a>
+        <a href="/projects"
+            class="hover:-translate-x-2 transition-all duration-200 text-lg sm:text-xl flex items-center px-6 link">view
+            all
+            <svg class="inline-block h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+        </a>
     </div>
 </section>

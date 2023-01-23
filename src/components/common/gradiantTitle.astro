@@ -52,7 +52,7 @@ const colorClasses = getClasses({
   "to-red-600": toColor === "red",
   "to-rose-600": toColor === "rose",
   "to-sky-600": toColor === "sky",
-  "to-primary-600": toColor === "primary",
+  "to-primary-600": toColor === "slate",
   "to-stone-600": toColor === "stone",
   "to-teal-600": toColor === "teal",
   "to-violet-600": toColor === "violet",
@@ -81,7 +81,7 @@ const colorClasses = getClasses({
   "from-red-600": fromColor === "red",
   "from-rose-600": fromColor === "rose",
   "from-sky-600": fromColor === "sky",
-  "from-primary-600": fromColor === "primary",
+  "from-primary-600": fromColor === "slate",
   "from-stone-600": fromColor === "stone",
   "from-teal-600": fromColor === "teal",
   "from-violet-600": fromColor === "violet",
@@ -110,7 +110,7 @@ const colorClasses = getClasses({
   "via-red-600": viaColor === "red",
   "via-rose-600": viaColor === "rose",
   "via-sky-600": viaColor === "sky",
-  "via-primary-600": viaColor === "primary",
+  "via-primary-600": viaColor === "slate",
   "via-stone-600": viaColor === "stone",
   "via-teal-600": viaColor === "teal",
   "via-violet-600": viaColor === "violet",
@@ -144,7 +144,7 @@ const Tag = as;
 
 <Tag class={`${Astro.props?.class}`}>
   <span
-    class={`${colorClasses} ${directionClass} ${sizeClasses} bg-clip-text font-bold text-transparent inline uppercase title px-4`}
+    class={`${colorClasses} ${directionClass} ${sizeClasses} block bg-clip-text text-transparent uppercase title`}
     ><slot />
   </span>
 </Tag>
