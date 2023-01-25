@@ -142,9 +142,6 @@ const sizeClasses = getClasses({
 const Tag = as;
 ---
 
-<Tag class={`${Astro.props?.class}`}>
-  <span
-    class={`${colorClasses} ${directionClass} ${sizeClasses} block bg-clip-text text-transparent uppercase title`}
-    ><slot />
-  </span>
+<Tag class={`${Astro.props?.class} ${colorClasses} ${directionClass} ${sizeClasses} w-full inline-block -mx-4 px-4 bg-clip-text text-transparent uppercase title`}>
+  <slot/>
 </Tag>

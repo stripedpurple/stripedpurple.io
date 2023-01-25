@@ -1,9 +1,10 @@
 ---
+import BlindsTitle from "../common/blindsTitle.astro";
 import GradiantTitle from "../common/gradiantTitle.astro";
 import ProjectCard from "../common/projectCard.astro";
 ---
 <section id="projectHighlight" class="py-12 sm:py-24">
-    <GradiantTitle size="5xl" class='mb-8 text-center'>Projects Highlights</GradiantTitle>
+    <BlindsTitle size="5xl" fromColor={'pink'} toColor={'purple'} class='mb-8 text-center'>Projects Highlights</BlindsTitle>
     <div class="sm:h-[75vh] sm:grid grid-rows-6 grid-cols-5 grid-flow-row-dense">
         <ProjectCard 
             class="row-span-3 col-span-2" 
