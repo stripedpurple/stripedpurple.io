@@ -1,0 +1,103 @@
+---
+import type { Size } from "../../types/size";
+import type { BaseColors } from "../../types/colors";
+import { getClasses } from "../../untils/getClasses";
+
+export interface Props extends astroHTML.JSX.HTMLAttributes {
+  toColor?: BaseColors;
+  fromColor?: BaseColors;
+  size?: Size;
+  as?: "";
+  // class?: string
+} 
+
+const {
+  fromColor = "violet",
+  toColor = "pink",
+  size = "2xl",
+  as = "h1",
+} = Astro.props as Props;
+
+const colorClasses = getClasses({
+  // To Color
+  'to-[#475569_50%]': toColor === 'slate',
+'to-[#4b5563_50%]': toColor === 'gray',
+'to-[#52525b_50%]': toColor === 'zinc',
+'to-[#525252_50%]': toColor === 'neutral',
+'to-[#57534e_50%]': toColor === 'stone',
+'to-[#dc2626_50%]': toColor === 'red',
+'to-[#ea580c_50%]': toColor === 'orange',
+'to-[#d97706_50%]': toColor === 'amber',
+'to-[#eab308_50%]': toColor === 'yellow',
+'to-[#65a30d_50%]': toColor === 'lime',
+'to-[#16a34a_50%]': toColor === 'green',
+'to-[#059669_50%]': toColor === 'emerald',
+'to-[#0d9488_50%]': toColor === 'teal',
+'to-[#0891b2_50%]': toColor === 'cyan',
+'to-[#0284c7_50%]': toColor === 'sky',
+'to-[#2563eb_50%]': toColor === 'blue',
+'to-[#4f46e5_50%]': toColor === 'indigo',
+'to-[#7c3aed_50%]': toColor === 'violet',
+'to-[#9333ea_50%]': toColor === 'purple',
+'to-[#c026d3_50%]': toColor === 'fuchsia',
+'to-[#db2777_50%]': toColor === 'pink',
+'to-[#e11d48_50%]': toColor === 'rose',
+'to-[white_50%]': toColor === 'white',
+  // From Color
+  'from-[#475569_50%]': fromColor === 'slate',
+'from-[#4b5563_50%]': fromColor === 'gray',
+'from-[#52525b_50%]': fromColor === 'zinc',
+'from-[#525252_50%]': fromColor === 'neutral',
+'from-[#57534e_50%]': fromColor === 'stone',
+'from-[#dc2626_50%]': fromColor === 'red',
+'from-[#ea580c_50%]': fromColor === 'orange',
+'from-[#d97706_50%]': fromColor === 'amber',
+'from-[#eab308_50%]': fromColor === 'yellow',
+'from-[#65a30d_50%]': fromColor === 'lime',
+'from-[#16a34a_50%]': fromColor === 'green',
+'from-[#059669_50%]': fromColor === 'emerald',
+'from-[#0d9488_50%]': fromColor === 'teal',
+'from-[#0891b2_50%]': fromColor === 'cyan',
+'from-[#0284c7_50%]': fromColor === 'sky',
+'from-[#2563eb_50%]': fromColor === 'blue',
+'from-[#4f46e5_50%]': fromColor === 'indigo',
+'from-[#7c3aed_50%]': fromColor === 'violet',
+'from-[#9333ea_50%]': fromColor === 'purple',
+'from-[#c026d3_50%]': fromColor === 'fuchsia',
+'from-[#db2777_50%]': fromColor === 'pink',
+'from-[#e11d48_50%]': fromColor === 'rose',
+'from-[white_50%]': fromColor === 'white',
+});
+
+const sizeClasses = getClasses({
+  "text-xs": size === "xs",
+  "text-sm": size === "sm",
+  "text-base": size === "md",
+  "text-lg": size === "lg",
+  "text-xl": size === "xl",
+  "text-2xl": size === "2xl",
+  "text-3xl": size === "3xl",
+  "text-4xl": size === "4xl",
+  "text-5xl": size === "5xl",
+  "text-6xl": size === "6xl",
+  "text-7xl": size === "7xl",
+  "text-8xl": size === "8xl",
+  "text-9xl": size === "9xl",
+});
+
+const Tag = as;
+---
+
+<Tag class={`${Astro.props?.class}`}>
+  <span
+    class={`${colorClasses} ${sizeClasses} title`}
+    ><slot />
+  </span>
+</Tag>
+
+
+<style scoped>
+  .title {
+    @apply -mx-4 px-4 h-screen bg-gradient-to-b bg-[length:100%_200%] bg-clip-text font-bold text-transparent bg-top hover:bg-bottom transition-all duration-300 uppercase;
+  }
+</style>
