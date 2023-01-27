@@ -3,13 +3,15 @@ import Section from "../common/section.astro";
 import Accordion from "../common/accordion.astro";
 import BlindsTitle from "../common/blindsTitle.astro";
 ---
-
 <Section class={"max-w-5xl mx-auto sm:my-24"} id="career">
   <BlindsTitle size="5xl" fromColor={'yellow'} toColor={'orange'} class='mb-8 text-center'>Work Experience</BlindsTitle>
   <Accordion>
-    <span class="flex items-center" slot="button"
-      ><b>Director, IT / Multi-Media Operations</b><span class="mx-2">|</span
-      >BioHiTech <small class="text-primary-200 ml-4">(2014 - 2021)</small>
+    <span class="flex items-start sm:items-center gap-x-2 flex-col sm:flex-row" slot="button">
+      <b class="font-medium">Dir, IT / Multimedia Operations</b>
+      <span class="flex gap-2 items-center">
+        <span title="at">@</span>BioHiTech
+        <small class="text-primary-200 text-base sm:text-sm">(2014 - 2021)</small>
+      </span>
     </span>
     <div slot="content">
       <p>
@@ -30,23 +32,30 @@ import BlindsTitle from "../common/blindsTitle.astro";
   </Accordion>
 
   <Accordion>
-    <span class="flex items-center" slot="button"
-      ><b>Lead UI / UX Developer</b><span class="mx-2">|</span>RolkaLoube <small
-        class="text-primary-200 ml-4">(2021 - Present)</small
-      >
+    <span class="flex items-start sm:items-center flex-col sm:flex-row gap-x-2" slot="button">
+      <b class="font-medium">Lead UI / UX Developer</b>
+      <span class="flex gap-2 items-center">
+        <span title="at">@</span>RolkaLoube 
+        <small class="text-primary-200 text-base sm:text-sm">(2021 - Present)</small>
+      </span>
     </span>
-    <p slot="content">
-      The approach will not be easy. You are required to maneuver straight down
-      this trench and skim the surface to this point. The target area is only
-      two meters wide. It’s a small thermal exhaust port, right below the main
-      port. The shaft leads directly to the reactor system. A precise hit will
-      start a chain reaction which should destroy the station. Only a precise
-      hit will set up a chain reaction. The shaft is ray-shielded, so you’ll
-      have to use proton torpedoes. That’s impossible, even for a computer. It’s
-      not impossible. I used to bull’s-eye womp rats in my T-sixteen back home.
-      They’re not much bigger than two meters. Man your ships! And may the Force
-      be with you!
-    </p>
+    <!-- <span class="flex items-center" slot="button" -->
+      <!-- ><b></b><span class="mx-2">|</span>RolkaLoube <small -->
+        <!-- class="text-primary-200 ml-4">(2021 - Present)</small -->
+      <!-- > -->
+    <!-- </span> -->
+    <div slot="content">
+      <p>Rolka Loube has a sole focus of helping federal and state government entities successfully administer programs and services with a focus on accessibility for disadvantaged and underserved populations.</p>
+      <ul class="list-disc pl-4 ml-4">
+        <li>Vue 3, React 16+, TS/JS,</li>
+        <li>Accessibility design, 508 Compliance</li>
+        <li>Adobe Creative Cloud (Ps, Ai, Pr, Xd, Lr, LrC, Id)</li>
+        <li>Docker / Container Engines</li>
+        <li>Azure DevOps, CI/CD</li>
+        <li>Node / Express / NestJS</li>
+        <li>PostgreSQL / Microsoft SQL Server</li>
+      </ul>
+    </div>
   </Accordion>
 </Section>
 

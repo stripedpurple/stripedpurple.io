@@ -9,7 +9,7 @@ export interface Props extends HTMLAttributes<any> {
   fromColor?: BaseColors;
   size?: Size;
   as?: string;
-  // class?: string
+  [x: string]: any
 } 
 
 const {
@@ -90,7 +90,7 @@ const sizeClasses = getClasses({
 const Tag = as;
 ---
 
-<Tag {...props}>
+<Tag {...props} class={props.class}>
   <span
     class={`${colorClasses} ${sizeClasses} title`}
     ><slot />

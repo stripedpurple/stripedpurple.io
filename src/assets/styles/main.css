@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  section {
+  *:focus {
+    @apply outline-none ring-1 ring-yellow-500;
+  }
+
+  * {
     scroll-padding-top: 3rem;
   }
 

@@ -4,18 +4,10 @@
 <div class="expanded accordion">
   <button class="btn">
     <slot name="button" />
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="icon"
-      aria-hidden="true"
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"
-      ></path>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icon">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
     </svg>
+    
   </button>
 
   <div class="description">
@@ -29,11 +21,11 @@
   }
 
   .expanded .icon {
-    @apply rotate-45;
+    @apply rotate-0;
   }
 
   .icon {
-    @apply h-6 w-6 transition-all duration-200;
+    @apply transition-all duration-200 text-white rounded-full h-6 w-6 sm:h-5 sm:w-5 -rotate-45;
   }
 
   .expanded .description {

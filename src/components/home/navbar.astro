@@ -1,17 +1,66 @@
 ---
 import BlindsTitle from "../common/blindsTitle.astro";
-
+import AcademicCapMini from "../icons/mini/academicCapMini.astro";
+import BuildingOfficeMini from "../icons/mini/buildingOfficeMini.astro";
+import ChatBubbleLeftRightMini from "../icons/mini/chatBubbleLeftRightMini.astro";
+import CodeBracketMini from "../icons/mini/codeBracketMini.astro";
+import HomeMini from "../icons/mini/homeMini.astro";
 ---
 
 <div class="select-none py-4 px-6 flex items-center justify-center m-0 w-full z-20 absolute top-0" id="navbar">
   <nav
   class="border border-primary-600/50 flex justify-center rounded-full items-center gap-6 sm:gap-8 px-6 py-2 text-lg font-medium capitalize backdrop-blur-sm bg-primary-800/50"
 >
-  <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" toColor={'violet'} fromColor={'white'} href="#" as='a' size={'md'}>home</BlindsTitle>
-  <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" toColor={'pink'} fromColor={'white'} href="#whatIDo" as='a' size={'md'}>What I do</BlindsTitle>
-  <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" toColor={'purple'} fromColor={'white'} href="#projectHighlight" as='a' size={'md'}>Projects</BlindsTitle>
-  <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" toColor={'orange'} fromColor={'white'} href="#career" as='a' size={'md'}>Career</BlindsTitle>
-  <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" toColor={'yellow'} fromColor={'white'} href="#footer" as='a' size={'md'}>contact</BlindsTitle>
+  <a href="#">
+    <HomeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+    toColor={'violet'} 
+    fromColor={'white'} 
+    as='div' 
+    size={'md'}>
+      home
+    </BlindsTitle>
+  </a>
+  <a href="#whatIDo">
+    <AcademicCapMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+    toColor={'pink'} 
+    fromColor={'white'} 
+    as='div' 
+    size={'md'}>
+      What I do
+    </BlindsTitle>
+  </a>
+  <a href="#projectHighlight">
+    <CodeBracketMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+    toColor={'purple'} 
+    fromColor={'white'} 
+    as='div' 
+    size={'md'}>
+      Projects
+    </BlindsTitle>
+  </a>
+  <a href="#career">
+    <BuildingOfficeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+    toColor={'orange'} 
+    fromColor={'white'} 
+    as='div' 
+    size={'md'}>
+      Career
+    </BlindsTitle>
+  </a>
+  <a href="#footer">
+    <ChatBubbleLeftRightMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+    toColor={'yellow'} 
+    fromColor={'white'} 
+    as='div' 
+    size={'md'}>
+      contact
+    </BlindsTitle>
+  </a>
 </nav>
 </div>
 
