@@ -2,12 +2,13 @@
 import type { Size } from "../../types/size";
 import type { BaseColors } from "../../types/colors";
 import { getClasses } from "../../untils/getClasses";
+import type { HTMLAttributes } from "astro/types";
 
-export interface Props extends astroHTML.JSX.HTMLAttributes {
+export interface Props extends HTMLAttributes<any> {
   toColor?: BaseColors;
   fromColor?: BaseColors;
   size?: Size;
-  as?: "";
+  as?: string;
   // class?: string
 } 
 
@@ -16,6 +17,7 @@ const {
   toColor = "pink",
   size = "2xl",
   as = "h1",
+  ...props
 } = Astro.props as Props;
 
 const colorClasses = getClasses({
@@ -88,7 +90,7 @@ const sizeClasses = getClasses({
 const Tag = as;
 ---
 
-<Tag class={`${Astro.props?.class}`}>
+<Tag {...props}>
   <span
     class={`${colorClasses} ${sizeClasses} title`}
     ><slot />

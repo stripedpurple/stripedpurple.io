@@ -5,36 +5,34 @@ import ProjectCard from "../common/projectCard.astro";
 ---
 <section id="projectHighlight" class="py-12 sm:py-24">
     <BlindsTitle size="5xl" fromColor={'pink'} toColor={'purple'} class='mb-8 text-center'>Projects Highlights</BlindsTitle>
-    <div class="sm:h-[75vh] sm:grid grid-rows-6 grid-cols-5 grid-flow-row-dense">
+    <div class="sm:h-[75vh] grid grid-rows-6 grid-cols-5 gap-4 sm:gap-0">
         <ProjectCard 
-            class="row-span-3 col-span-2" 
+            class="col-span-full sm:row-span-3 sm:col-span-2" 
             img="/images/texttool.app.png" 
             to="https://texttool.app"
             title='Text Tools' 
             description="A collection of powerful string/text maniplulation tools living right in your browser" />
         <ProjectCard 
-            class="row-span-6 col-span-3" 
+            class="col-span-full sm:row-span-6 sm:col-span-3" 
             img="/images/biohitech.com.png"
             to="https://biohitech.stripedpurple.io/" 
             title='BioHiTech Global'
             titleColor='yellow'
             description="With combined power of natural science and cutting-edge technologies BioHiTech Global is working to solve complex real-world challenges that threaten our environment, biodiversity, and energy resources." />
         <ProjectCard 
-            class="row-span-3 col-span-2" 
+            class="col-span-full sm:row-span-3 sm:col-span-2" 
             img="/images/scrubspodcast.cc.png" 
             to="https://scrubspodcast.cc"
             title='Scrubs Podcast' 
             titleColor='violet'
             description="The internet's favorite TV re-watch podcast's unofficial website. Listen as the gang riffs, rememinise, and gets you rolling on the floor." />
     </div>
-    <div class="flex justify-end py-4">
-        <a href="/projects"
-            class="hover:-translate-x-2 transition-all duration-200 text-lg sm:text-xl flex items-center px-6 link">view
-            all
-            <svg class="inline-block h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-        </a>
+    <div class="flex justify-end py-4 relative">
+        <a href="/projects" class="hover:-translate-x-2 transition-all duration-200 text-lg sm:text-xl flex items-center px-6">
+            <BlindsTitle as={'div'} size={'lg'} fromColor={'white'}>view all</BlindsTitle>
+            <svg class='inline h-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
+            </svg>              
+    </a>
     </div>
 </section>
