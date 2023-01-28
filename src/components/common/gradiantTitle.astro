@@ -9,6 +9,7 @@ export interface Props extends astroHTML.JSX.HTMLAttributes {
   fromColor?: BaseColors;
   viaColor?: BaseColors;
   size?: Size;
+  lg?: Size;
   direction?: Direction;
   as?: "";
   // class?: string
@@ -19,6 +20,7 @@ const {
   toColor = "fuchsia",
   viaColor = "",
   size = "2xl",
+  lg,
   direction = "tr",
   as = "h1",
 } = Astro.props as Props;
@@ -137,6 +139,21 @@ const sizeClasses = getClasses({
   "text-7xl": size === "7xl",
   "text-8xl": size === "8xl",
   "text-9xl": size === "9xl",
+  
+  // Smalls
+  "lg:text-xs": lg === "xs",
+  "lg:text-sm": lg === "sm",
+  "lg:text-base": lg === "md",
+  "lg:text-lg": lg === "lg",
+  "lg:text-xl": lg === "xl",
+  "lg:text-2xl": lg === "2xl",
+  "lg:text-3xl": lg === "3xl",
+  "lg:text-4xl": lg === "4xl",
+  "lg:text-5xl": lg === "5xl",
+  "lg:text-6xl": lg === "6xl",
+  "lg:text-7xl": lg === "7xl",
+  "lg:text-8xl": lg === "8xl",
+  "lg:text-9xl": lg === "9xl",
 });
 
 const Tag = as;

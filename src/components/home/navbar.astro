@@ -5,59 +5,66 @@ import BuildingOfficeMini from "../icons/mini/buildingOfficeMini.astro";
 import ChatBubbleLeftRightMini from "../icons/mini/chatBubbleLeftRightMini.astro";
 import CodeBracketMini from "../icons/mini/codeBracketMini.astro";
 import HomeMini from "../icons/mini/homeMini.astro";
+import type Skills from "./skills.astro";
 ---
 
-<div class="select-none py-4 px-6 sm:px-8 flex items-center justify-center m-0 w-full z-20 absolute top-0" id="navbar">
+<div class="select-none py-4 px-4 sm:px-8 flex items-center justify-center m-0 w-full z-20 absolute top-0" id="navbar">
   <nav
   class="w-full sm:w-auto border border-primary-600/50 flex justify-around sm:justify-center rounded-full items-center gap-6 sm:gap-8 px-6 py-2 text-lg font-medium capitalize backdrop-blur-sm bg-primary-800/50"
 >
-  <a href="#">
-    <HomeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
-    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+  <a href="#" class="text-center hidden sm:inline">
+    <!-- <HomeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/50'/> -->
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" 
+    size={'sm'}
+    lg={'md'}
     toColor={'violet'} 
     fromColor={'white'} 
-    as='div' 
-    size={'md'}>
+    as='div' >
       home
     </BlindsTitle>
   </a>
-  <a href="#whatIDo">
-    <AcademicCapMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
-    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+  <a href="#whatIDo" class="text-center">
+    <!-- <AcademicCapMini class='h-6 w-6 inline-block sm:hidden text-gray-200/50'/> -->
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" 
+    size={'sm'}
+    lg={'md'}
     toColor={'pink'} 
     fromColor={'white'} 
-    as='div' 
-    size={'md'}>
-      What I do
+    as='div' >
+      <!-- What I do -->
+      Skills
     </BlindsTitle>
   </a>
-  <a href="#projectHighlight">
-    <CodeBracketMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
-    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+  <a href="#projectHighlight" class="text-center">
+    <!-- <CodeBracketMini class='h-6 w-6 inline-block sm:hidden text-gray-200/50'/> -->
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" 
+    size={'sm'}
+    lg={'md'}
     toColor={'purple'} 
     fromColor={'white'} 
-    as='div' 
-    size={'md'}>
+    as='div' >
       Projects
     </BlindsTitle>
   </a>
-  <a href="#career">
-    <BuildingOfficeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
-    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+  <a href="#career" class="text-center">
+    <!-- <BuildingOfficeMini class='h-6 w-6 inline-block sm:hidden text-gray-200/50'/> -->
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" 
+    size={'sm'}
+    lg={'md'}
     toColor={'orange'} 
     fromColor={'white'} 
-    as='div' 
-    size={'md'}>
+    as='div' >
       Career
     </BlindsTitle>
   </a>
-  <a href="#footer">
-    <ChatBubbleLeftRightMini class='h-6 w-6 inline-block sm:hidden text-gray-200/75'/>
-    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all sr-only sm:not-sr-only" 
+  <a href="#footer" class="text-center">
+    <!-- <ChatBubbleLeftRightMini class='h-6 w-6 inline-block sm:hidden text-gray-200/50'/> -->
+    <BlindsTitle class="opacity-80 hover:opacity-100 transition-all" 
+    size={'sm'}
+    lg={'md'}
     toColor={'yellow'} 
     fromColor={'white'} 
-    as='div' 
-    size={'md'}>
+    as='div' >
       contact
     </BlindsTitle>
   </a>

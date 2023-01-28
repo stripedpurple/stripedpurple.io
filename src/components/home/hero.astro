@@ -1,5 +1,6 @@
 ---
 import GradiantTitle from "../common/gradiantTitle.astro";
+import ArrowDown from "../icons/outline/ArrowDown.astro";
 ---
 
 <section
@@ -13,7 +14,9 @@ import GradiantTitle from "../common/gradiantTitle.astro";
   <div aria-hidden="true"></div>
   <div class="flex justify-between items-center w-full z-10">
     <div class="max-w-lg sm:mx-16">
-      <GradiantTitle class={"mb-4 !text-6xl sm:!text-7xl"}>Austin Barrett</GradiantTitle>
+      <GradiantTitle class={"mb-4"} size={'6xl'} lg={'7xl'}>
+        Austin Barrett
+      </GradiantTitle>
       <p class="text-lg sm:text-xl md:text-2xl">
         Web UI/UX Developer, <wbr />Photographer/Digital Artist, <wbr />Magician
         Extraordinaire
@@ -28,17 +31,7 @@ import GradiantTitle from "../common/gradiantTitle.astro";
       role="button"
       class="select-all"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="w-12 h-12 motion-safe:animate-bounce"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z"
-          clip-rule="evenodd"></path>
-      </svg>
+      <ArrowDown class="w-12 h-12 motion-safe:animate-bounce"/>
     </a>
   </div>
 </section>
