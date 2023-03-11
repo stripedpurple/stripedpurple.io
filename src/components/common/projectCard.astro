@@ -46,10 +46,10 @@ let titleColorClass = getClasses({
 
 <a href={to} class={`card group ${props.class}`} target="_blank" rel="noopener">
     <span class="group-hover:scale-110 card-img" style={`background-image: url(${img})`}></span>
-    <span class="card-info">
+    <dl class="card-info">
         <dt class={`card-title ${titleColorClass}`}>{title}</dt>
         <dd class="card-description group-hover:truncate-none">{description}</dd>
-    </span>
+    </dl>
 </a>
 
 
